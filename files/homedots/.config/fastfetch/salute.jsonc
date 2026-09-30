@@ -1,0 +1,81 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "small",
+    "padding": {
+      "top": 2,
+      "left": 4,
+      "right": 4,
+    //  "bottom": 2,
+    },
+  },
+  "display": {
+    "separator": " ▶ ",
+    "color": {
+      "separator": "#5b6078",
+      "output": "default",
+    },
+    "constants": [
+      "────────────────────────────────────────────────────────────────",
+      "■",
+    ],
+    "key": {
+      "paddingLeft": 4,
+      "type": "string",
+    },
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": " ┌{$1}┐",
+    },
+    {
+      "keyColor": "red",
+      "key": "{$2}  OS     ",
+      "type": "os",
+    },
+    {
+      "keyColor": "light_red",
+      "key": "{$2}  Kernel ",
+      "type": "kernel",
+    },
+    {
+      "keyColor": "#fab387",
+      "key": "{$2}  Desktop",
+      "type": "de",
+    },
+    {
+      "keyColor": "blue",
+      "key": "{$2}  CPU    ",
+      "type": "cpu",
+      "format": "{name} ({cores-physical}C/{cores-logical}T) @ {freq-max}",
+    },
+    {
+      "keyColor": "green",
+      "key": "{$2}  GPU    ",
+      "type": "gpu",
+      "format": "{2}",
+      "hideType": "integrated",
+    },
+    {
+      "keyColor": "magenta",
+      "key": "{$2}  Memory ",
+      "type": "memory",
+    },
+    {
+      "keyColor": "yellow",
+      "key": "{$2}  Disk   ",
+      "type": "disk",
+      "format": "{?name}{name}{?}{/name}root{/} - {size-used} / {size-total} ({size-percentage})",
+    },
+    {
+      "keyColor": "cyan",
+      "key": "{$2}  Uptime ",
+      "type": "uptime",
+    },
+    {
+      "type": "custom",
+      "format": " └{$1}┘",
+    },
+  ],
+}

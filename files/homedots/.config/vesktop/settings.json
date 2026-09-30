@@ -1,0 +1,9 @@
+{
+    "discordBranch": "stable",
+    "minimizeToTray": true,
+    "arRPC": true,
+    "staticTitle": true,
+    "customTitleBar": true,
+    "splashColor": "rgb(205, 214, 244)",
+    "splashBackground": "rgb(17, 17, 27)"
+}

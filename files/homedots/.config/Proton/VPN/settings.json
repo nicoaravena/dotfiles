@@ -1,0 +1,77 @@
+{
+    "protocol": "wireguard",
+    "killswitch": 0,
+    "custom_dns": {
+        "enabled": true,
+        "ip_list": [
+            {
+                "ip": "9.9.9.9",
+                "enabled": true
+            },
+            {
+                "ip": "149.112.112.112",
+                "enabled": true
+            },
+            {
+                "ip": "2620:fe::fe",
+                "enabled": true
+            },
+            {
+                "ip": "2620:fe::9",
+                "enabled": true
+            }
+        ]
+    },
+    "ipv6": true,
+    "anonymous_crash_reports": true,
+    "features": {
+        "netshield": 0,
+        "moderate_nat": true,
+        "vpn_accelerator": true,
+        "port_forwarding": true,
+        "split_tunneling": {
+            "enabled": true,
+            "mode": "exclude",
+            "config_by_mode": {
+                "exclude": {
+                    "mode": "exclude",
+                    "app_paths": [
+                        "/usr/bin/steam",
+                        "/usr/bin/steam",
+                        "/usr/bin/steam",
+                        "/usr/bin/steam",
+                        "/usr/bin/steam",
+                        "/usr/lib/firefox-developer-edition/firefox",
+                        "/usr/bin/steam",
+                        "/usr/bin/steam",
+                        "/usr/bin/steam",
+                        "/usr/bin/steam",
+                        "/usr/bin/steam",
+                        "/usr/bin/gamescope",
+                        "/usr/bin/steam",
+                        "/usr/bin/steam",
+                        "/usr/bin/steam",
+                        "/usr/bin/vesktop",
+                        "/usr/bin/steam"
+                    ],
+                    "ip_ranges": []
+                },
+                "include": {
+                    "mode": "include",
+                    "app_paths": [
+                        "/usr/bin/env",
+                        "\"$HOME/.appmanager/Bionic\"",
+                        "/usr/bin/blender",
+                        "\"$HOME/.appmanager/Cherry",
+                        "/usr/bin/mscore",
+                        "/usr/bin/obs",
+                        "\"$HOME/.appmanager/ProtonUp-Qt\"",
+                        "/usr/bin/vesktop",
+                        "/usr/bin/zeditor"
+                    ],
+                    "ip_ranges": []
+                }
+            }
+        }
+    }
+}

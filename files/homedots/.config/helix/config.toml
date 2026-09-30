@@ -1,0 +1,29 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+shell = ["/usr/bin/zsh", "-c"]
+cursorline = true
+color-modes = true
+end-of-line-diagnostics = "hint"
+bufferline = "multiple"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+character = "╎"
+
+[editor.soft-wrap]
+enable = true
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name", "read-only-indicator", "file-modification-indicator"]
+center = []
+right = ["diagnostics", "selections", "register", "position", "file-encoding"]

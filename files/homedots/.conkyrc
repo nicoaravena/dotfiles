@@ -1,0 +1,141 @@
+conky.config ={
+  -- CONKY SETTINGS
+  background = true,
+  update_interval = 1,
+  total_run_times = 0,
+
+  cpu_avg_samples = 8,
+  net_avg_samples = 1,
+
+  override_utf8_locale = true,
+
+  double_buffer = true,
+  no_buffers = true,
+
+  text_buffer_size = 65536,
+
+  -- CONKY: WINDOW SPECIFICATIONS
+  own_window = true,
+  own_window_argb_value = 100,
+  own_window_argb_visual = true,
+  own_window_class = 'conky',
+  own_window_colour = '#11111b',
+  own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+  own_window_transparent = true,
+  own_window_type = 'desktop',
+
+  border_inner_margin = 15,
+  border_width = 5,
+
+  minimum_height = 1005,
+
+  minimum_width = 300,
+  maximum_width = 300,
+
+  alignment = 'top_left',
+  gap_x = 15,
+  gap_y = 45,
+
+  -- GRAPHICS SETTINGS
+  draw_shades = false,
+  draw_outline = false,
+  draw_borders = false,
+  draw_graph_borders = true,
+
+  -- TEXT SETTINGS
+  use_xft = true,
+  xftalpha = 1,
+  font = 'Fira Code Retina:size=10',
+  font1 = 'Fira Code Semibold:size=10',
+  font2 = 'Fira Code Bold:size=12',
+  font3 = 'Fira Code Retina:size=10',
+
+  uppercase = false,
+
+  -- Pad percentages to this many decimals (0 = no padding)
+  pad_percents = 2,
+
+  -- COLOUR SETTINGS
+  default_color = 'AAAAAA',
+  default_shade_color = '333333',
+  -- default_outline_color = '111111',
+  default_outline_color = '010101',
+  -- title_color
+  color1 = 'f5e0dc',
+  -- item_color
+  color2 = 'a6adc8',
+  -- item_text_color
+  color3 = 'cdd6f4',
+  -- contrast_text_color
+  color4 = '89b4fa',
+  -- utility_color
+  color5 = 'cba6f7',
+};
+
+
+conky.text = [[
+# SYSTEM
+${font1}${color2}HOSTNAME ${color3}${alignr}${nodename}${color}
+${font1}${color2}DISTRO ${color3}${alignr}${exec lsb_release -ds} (${exec lsb_release -cs})${color}
+${font1}${color2}KERNEL ${color3}${alignr}${sysname} ${kernel}${color}
+${font1}${color2}UPTIME ${color3}${alignr}${uptime_short}${color}
+# RAM
+${font2}${color1}MEMORY ${color5}${hr 2}${font}${color}
+${voffset -15}
+${font1}${color2}RAM${font} ${color3}${alignr } ${mem}${color4}[${memperc}%]${color}
+${alignr}${color5}${memgraph 15,265, a6e3a1 f5c2e7 -l}${color}
+# CPU
+${font2}${color1}CPU ${color5}${hr 2}${font}${color}
+${voffset -15}
+${alignr}${color4}${exec cat /proc/cpuinfo | grep 'model name' | sed -e 's/model name.*: //' | uniq | cut -c 1-27}${color}
+${color2}TEMPERATURE${color3} ${font1}${alignr}${acpitemp}${color5}°C${font}${color}
+${voffset -15}
+${color2}C01 ${alignc}${font1} ${goto 60} ${freq_g 1}${color5}GHz ${goto 130} ${color4}[${cpu cpu1}${color4}%]${goto 175}${color}${font} ${color2}C02 ${alignc}${font1}${freq_g 2}${color5}GHz ${alignr}${color4}[${cpu cpu2}${color4}%]${color}${font}
+${color2}C03 ${alignc}${font1} ${goto 60} ${freq_g 3}${color5}GHz ${goto 130} ${color4}[${cpu cpu3}${color4}%]${goto 175}${color}${font} ${color2}C04 ${alignc}${font1}${freq_g 4}${color5}GHz ${alignr}${color4}[${cpu cpu4}${color4}%]${color}${font}
+${color2}C05 ${alignc}${font1} ${goto 60} ${freq_g 5}${color5}GHz ${goto 130} ${color4}[${cpu cpu5}${color4}%]${goto 175}${color}${font} ${color2}C06 ${alignc}${font1}${freq_g 6}${color5}GHz ${alignr}${color4}[${cpu cpu6}${color4}%]${color}${font}
+${color2}C07 ${alignc}${font1} ${goto 60} ${freq_g 7}${color5}GHz ${goto 130} ${color4}[${cpu cpu7}${color4}%]${goto 175}${color}${font} ${color2}C08 ${alignc}${font1}${freq_g 8}${color5}GHz ${alignr}${color4}[${cpu cpu8}${color4}%]${color}${font}
+${color2}C09 ${alignc}${font1} ${goto 60} ${freq_g 9}${color5}GHz ${goto 130} ${color4}[${cpu cpu9}${color4}%]${goto 175}${color}${font} ${color2}C10 ${alignc}${font1}${freq_g 10}${color5}GHz ${alignr}${color4}[${cpu cpu10}${color4}%]${color}${font}
+${color2}C11 ${alignc}${font1} ${goto 60} ${freq_g 11}${color5}GHz ${goto 130} ${color4}[${cpu cpu11}${color4}%]${goto 175}${color}${font} ${color2}C12 ${alignc}${font1}${freq_g 12}${color5}GHz ${alignr}${color4}[${cpu cpu12}${color4}%]${color}${font}
+${color2}C13 ${alignc}${font1} ${goto 60} ${freq_g 12}${color5}GHz ${goto 130} ${color4}[${cpu cpu12}${color4}%]${goto 175}${color}${font} ${color2}C14 ${alignc}${font1}${freq_g 13}${color5}GHz ${alignr}${color4}[${cpu cpu13}${color4}%]${color}${font}
+${color2}C15 ${alignc}${font1} ${goto 60} ${freq_g 14}${color5}GHz ${goto 130} ${color4}[${cpu cpu14}${color4}%]${goto 175}${color}${font} ${color2}C16 ${alignc}${font1}${freq_g 15}${color5}GHz ${alignr}${color4}[${cpu cpu15}${color4}%]${color}${font}
+# NVIDIA
+${font2}${color1}NVIDIA ${color5}${hr 2}${font}${color}
+${voffset -15}
+${alignr}${color4}${exec nvidia-smi --query-gpu name --format csv,noheader}${color}
+${alignr}${color4}v${exec nvidia-smi --query-gpu driver_version --format csv,noheader}${color}
+${voffset -15}
+${font1}${color2}CLOCKS${color3} ${font}${alignr}${exec nvidia-smi --query-gpu clocks.current.memory --format csv,noheader}${color4}/${color}${exec nvidia-smi --query-gpu clocks.max.memory --format csv,noheader}${font}${color}
+${font1}${color2}MEM${color3}${font}${alignr}${exec nvidia-smi --query-gpu memory.used --format csv,noheader}${color4}/${color}${exec nvidia-smi --query-gpu memory.total --format csv,noheader}${font}${color}
+${font1}${color2}POWER${color3} ${font}${alignr}${exec nvidia-smi --query-gpu power.draw --format csv,noheader}${color4}/${color}${exec nvidia-smi --query-gpu power.default_limit --format csv,noheader}${font}${color}
+${font1}${color2}TEMPERATURE${color3} ${font}${alignr}${exec nvidia-smi --query-gpu temperature.gpu --format csv,noheader}${color5}°C${font}${color}
+# NETWORK
+${font2}${color1}NETWORK ${color5}${hr 2}${font}${color}
+${voffset -15}
+${font1}${color2}SPEED${color}
+UP ${color} ${alignr}${upspeed wlan0} ${color5}${upspeedgraph wlan0 10,150 ADFF2F a6e3a1 -t}${color}
+DOWN${color} ${goto 220}${alignr}${downspeed wlan0} ${color5}${downspeedgraph wlan0 10,150 f38ba8 f5c2e7 -t}${color}
+${font1}${color2}TOTAL UP${color3} ${alignc}${totalup wlan0} ${alignr}${color2}TOTAL DOWN${color3} ${alignc}${totaldown wlan0}${font}${color}
+# DISKS
+${font2}${color1}DISKS ${color5}${hr 2}${font}${color}
+${voffset -15}
+${font1}${color2}main${font} ${goto 90}${color5}${fs_bar 10,130 /}${alignr}${color3}${fs_used /}${color4}[${fs_used_perc /}%]${color}
+${font3}↪${font1} ${color2}I/O ${goto 90}${color5}${diskiograph /dev/nvme0n1p3 10,130 f38ba8 a6e3a1 750}${color} ${alignr}${diskio /dev/nvme0n1p3}${color}
+${voffset -15}
+${font1}${color2}storage${font} ${goto 90}${color5}${fs_bar 10,130 /mnt/storage}${alignr}${color3}${fs_used /mnt/storage}${color4}[${fs_used_perc /mnt/storage}%]${color}
+${font3}↪${font1} ${color2}I/O ${goto 90}${color5}${diskiograph /dev/nvme1n1p5 10,130 f38ba8 a6e3a1 750}${color} ${alignr}${diskio /dev/nvme1n1p5}${color}
+# PROCESSES
+${font2}${color1}PROCESSES ${color5}${hr 2}${font}${color}
+${voffset -15}
+${font1}${color2}APP NAME ${goto 190}MEMORY ${alignr}CPU ${font}${color}
+${font}${color2}${top_mem name 1} ${font}${color} ${goto 175}${top mem 1} % ${alignr}${top cpu 1} %
+${font}${color2}${top_mem name 2} ${font}${color} ${goto 175}${top mem 2} % ${alignr}${top cpu 2} %
+${font}${color2}${top_mem name 3} ${font}${color} ${goto 175}${top mem 3} % ${alignr}${top cpu 3} %
+${font}${color2}${top_mem name 4} ${font}${color} ${goto 175}${top mem 4} % ${alignr}${top cpu 4} %
+${font}${color2}${top_mem name 5} ${font}${color} ${goto 175}${top mem 5} % ${alignr}${top cpu 5} %
+${font}${color2}${top_mem name 6} ${font}${color} ${goto 175}${top mem 6} % ${alignr}${top cpu 6} %
+${font}${color2}${top_mem name 7} ${font}${color} ${goto 175}${top mem 7} % ${alignr}${top cpu 7} %
+${font}${color2}${top_mem name 8} ${font}${color} ${goto 175}${top mem 8} % ${alignr}${top cpu 8} %
+${font}${color2}${top_mem name 9} ${font}${color} ${goto 175}${top mem 9} % ${alignr}${top cpu 9} %
+${color3}${alignr}${processes} ${font :size=8}total processes${color}
+# ${voffset 6}
+]];

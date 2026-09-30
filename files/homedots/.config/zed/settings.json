@@ -1,0 +1,108 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "diff_view_style": "unified",
+  "helix_mode": false,
+  "show_wrap_guides": true,
+  "text_rendering_mode": "platform_default",
+  "markdown_preview_font_size": 16.0,
+  "buffer_line_height": "standard",
+  "colorize_brackets": true,
+  "code_lens": "menu",
+  "completion_menu_scrollbar": "always",
+  "indent_guides": {
+    "background_coloring": "disabled",
+    "active_line_width": 3,
+    "line_width": 2,
+    "coloring": "indent_aware",
+  },
+  "preferred_line_length": 88,
+  "soft_wrap": "editor_width",
+  "toolbar": {
+    "code_actions": false,
+  },
+  "which_key": {
+    "enabled": false,
+  },
+  "terminal": {
+    "show_count_badge": true,
+  },
+  "minimap": {
+    "show": "always",
+  },
+  "disable_ai": true,
+  "cli_default_open_behavior": "existing_window",
+  "edit_predictions": {
+    "mode": "subtle",
+  },
+  "proxy": "",
+  "project_panel": {
+    "hide_root": false,
+    "git_status_indicator": true,
+    "diagnostic_badges": true,
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left",
+  },
+  "git_panel": {
+    "show_count_badge": true,
+    "entry_primary_click_action": "file_diff",
+    "file_icons": true,
+    "tree_view": true,
+    "dock": "left",
+  },
+  "format_on_save": "off",
+  "show_whitespaces": "boundary",
+  "agent": {
+    "dock": "right",
+    "default_profile": "planner",
+    "profiles": {
+      "planner": {
+        "default_model": {
+          "provider": "anthropic",
+          "model": "claude-opus-4-5-latest",
+        },
+        "name": "Planner",
+        "tools": {
+          "diagnostics": true,
+          "read_file": true,
+          "thinking": true,
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {},
+      },
+    },
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-5-latest",
+    },
+    "model_parameters": [],
+  },
+  "redact_private_values": true,
+  "buffer_font_family": "Fira Code",
+  "base_keymap": "SublimeText",
+  "icon_theme": "Bearded Icon Theme",
+  "ui_font_size": 14.0,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "Catppuccin Latte - No Italics",
+    "dark": "Catppuccin Mocha",
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["ty", "!basedpyright", "!pylsp"],
+    },
+  },
+}

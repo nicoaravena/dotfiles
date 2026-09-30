@@ -1,0 +1,22 @@
+{
+    "rules": [
+        {
+            "pattern": {
+                "feature": "procname",
+                "matches": "Warframe.exe"
+            },
+            "profile": "enable_gsync"
+        }
+    ],
+    "profiles": [
+        {
+            "name": "enable_gsync",
+            "settings": [
+                {
+                    "key": "GLGSYNCAllowed",
+                    "value": true
+                }
+            ]
+        }
+    ]
+}

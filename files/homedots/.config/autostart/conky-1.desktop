@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=conky
+Exec=conky   --daemonize --pause=1
+StartupNotify=false
+Terminal=false
+Icon=conky-logomark-violet
+Categories=System;Monitor;
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+Name[en_US]=conky
+Comment[en_US]=No description
+X-GNOME-Autostart-Delay=0

@@ -1,0 +1,33 @@
+{
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "bearded-icons",
+    "projectManager.git.baseFolders": [
+        "~/dev"
+    ],
+    "redhat.telemetry.enabled": false,
+    "json.schemaDownload.trustedDomains": {
+        "https://developer.microsoft.com/json-schemas/": true,
+        "https://json-schema.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://opencode.ai": true,
+        "https://raw.githubusercontent.com/devcontainers/spec/": true,
+        "https://raw.githubusercontent.com/microsoft/vscode/": true,
+        "https://schemastore.azurewebsites.net/": true,
+        "https://www.schemastore.org/": true
+    },
+    "shellformat.useEditorConfig": true,
+    "shellformat.path": "/usr/bin/shfmt",
+    "shellformat.effectLanguages": [
+        "shellscript",
+        "dockerfile",
+        "dotenv",
+        "hosts",
+        "jvmoptions",
+        "ignore",
+        "gitignore",
+        "properties",
+        "spring-boot-properties",
+        "azcli",
+        "bats"
+    ]
+}

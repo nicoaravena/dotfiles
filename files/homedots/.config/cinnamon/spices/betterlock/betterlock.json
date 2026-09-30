@@ -1,0 +1,59 @@
+{
+    "section1": {
+        "type": "section",
+        "description": "Indicators"
+    },
+    "show-num-lock-indicator": {
+        "type": "switch",
+        "default": true,
+        "description": "Show num lock indicator",
+        "value": true
+    },
+    "show-caps-lock-indicator": {
+        "type": "switch",
+        "default": true,
+        "description": "Show caps lock indicator",
+        "value": true
+    },
+    "show-scr-lock-indicator": {
+        "type": "switch",
+        "default": false,
+        "description": "Show scr lock indicator",
+        "value": true
+    },
+    "hide-inactive-indicators": {
+        "type": "switch",
+        "default": false,
+        "description": "Hide inactive indicators",
+        "value": false
+    },
+    "toggle-on-click": {
+        "type": "switch",
+        "default": true,
+        "description": "Toggle state when clicked",
+        "value": true
+    },
+    "section2": {
+        "type": "section",
+        "description": "Notifications"
+    },
+    "show-osd-notifications": {
+        "type": "switch",
+        "default": false,
+        "description": "Show OSD notifications",
+        "value": false
+    },
+    "show-toast-notifications": {
+        "type": "switch",
+        "default": false,
+        "description": "Show toast notifications",
+        "value": false
+    },
+    "show-silent-notifications": {
+        "type": "switch",
+        "default": false,
+        "description": "Silence system notification sound",
+        "value": false
+    },
+    "__md5__": "6393d8727b0a6b76b6edce9c089095fa"
+}

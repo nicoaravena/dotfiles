@@ -1,0 +1,96 @@
+{
+    "permissions": {
+        "allow": [
+            "Bash(rtk:*)",
+            "Bash(sed:*)",
+            "Bash(awk:*)",
+            "Bash(grep:*)",
+            "Bash(rg:*)",
+            "Bash(find:*)",
+            "Bash(ls:*)",
+            "Bash(cat:*)",
+            "Bash(head:*)",
+            "Bash(tail:*)",
+            "Bash(wc:*)",
+            "Bash(sort:*)",
+            "Bash(uniq:*)",
+            "Bash(cut:*)",
+            "Bash(tr:*)",
+            "Bash(printf:*)",
+            "Bash(test:*)",
+            "Bash(jq:*)",
+            "Bash(cp:*)",
+            "Bash(mkdir:*)",
+            "Bash(install:*)",
+            "Bash(ps:*)",
+            "Bash(pgrep:*)",
+            "Bash(pkill:*)",
+            "Bash(curl:*)",
+            "Bash(git:*)",
+            "Bash(gh:*)",
+            "Bash(glab:*)",
+            "Bash(pnpm:*)",
+            "Bash(pnpx:*)",
+            "Bash(next:*)",
+            "Bash(cargo:*)",
+            "Bash(rustc:*)",
+            "Bash(rustup:*)",
+            "Bash(go:*)",
+            "Bash(uv:*)",
+            "Bash(make:*)",
+            "Bash(cmake:*)",
+            "Bash(ctest:*)",
+            "Bash(ninja:*)",
+            "Bash(meson:*)",
+            "Bash(just:*)",
+            "Bash(tsc:*)",
+            "Bash(stylelint:*)",
+            "Bash(markdownlint:*)",
+            "Bash(shellcheck:*)",
+            "Bash(podman:*)",
+            "Bash(docker:*)",
+            "Bash(kubectl:*)",
+            "Bash(helm:*)",
+            "Bash(terraform:*)"
+        ],
+        "defaultMode": "default"
+    },
+    "hooks": {
+        "PreToolUse": [
+            {
+                "matcher": "Bash",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "if command -v rtk >/dev/null 2>&1; then rtk hook claude; fi"
+                    }
+                ]
+            }
+        ],
+        "PostToolUse": [
+            {
+                "matcher": "Write|Edit",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "jq -r '.tool_response.filePath // .tool_input.file_path' | { read -r f; case \"$f\" in *.py) uvx ruff format \"$f\" ;; *.go) gofmt -w \"$f\" ;; *.rs) rustfmt \"$f\" ;; esac; } 2>/dev/null || true"
+                    }
+                ]
+            }
+        ]
+    },
+    "enabledPlugins": {
+        "claude-md-management@claude-plugins-official": true,
+        "claude-security@claude-plugins-official": true,
+        "coderabbit@claude-plugins-official": true,
+        "code-review@claude-plugins-official": true,
+        "code-simplifier@claude-plugins-official": true,
+        "pr-review-toolkit@claude-plugins-official": true,
+        "skill-creator@claude-plugins-official": true,
+        "superpowers@claude-plugins-official": true
+    },
+    "effortLevel": "xhigh",
+    "awaySummaryEnabled": false,
+    "autoUpdatesChannel": "stable",
+    "theme": "dark"
+}

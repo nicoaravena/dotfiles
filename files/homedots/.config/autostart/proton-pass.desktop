@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Proton Pass
+Comment=Proton Pass desktop application
+GenericName=Password Manager
+Exec=proton-pass %U
+Icon=proton-pass
+Type=Application
+StartupNotify=true
+Categories=Utility;
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+Name[en_US]=Proton Pass
+Comment[en_US]=Proton Pass desktop application
+X-GNOME-Autostart-Delay=10

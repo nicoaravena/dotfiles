@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Proton VPN
+Exec=protonvpn-app
+Terminal=false
+Type=Application
+Icon=proton-vpn-logo
+StartupWMClass=protonvpn-app
+Comment=Proton VPN GUI client
+Categories=Network;
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+Name[en_US]=Proton VPN
+Comment[en_US]=Proton VPN GUI client
+X-GNOME-Autostart-Delay=0
