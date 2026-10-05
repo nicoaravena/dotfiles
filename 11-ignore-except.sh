@@ -80,6 +80,7 @@ home_white_list=(
     '.config/zed/*'
     '.dmrc'
     '.editorconfig'
+    '.ignore'
     '.nv/nvidia-application-profiles-rc'
     '.pam_environment'
     '.presets/*'

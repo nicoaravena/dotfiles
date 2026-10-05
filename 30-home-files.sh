@@ -68,6 +68,7 @@ CopyFileTo /homedots/.config/zed/settings.json $HOME/.config/zed/settings.json 6
 CopyFileTo /homedots/.conkyrc $HOME/.conkyrc '' $USER $USER
 CopyFileTo /homedots/.dmrc $HOME/.dmrc '' $USER $USER
 CopyFileTo /homedots/.editorconfig $HOME/.editorconfig 664 $USER $USER
+CopyFileTo /homedots/.ignore $HOME/.ignore '' $USER $USER
 CopyFileTo /homedots/.nv/nvidia-application-profiles-rc $HOME/.nv/nvidia-application-profiles-rc '' $USER $USER
 CopyFileTo /homedots/.pam_environment $HOME/.pam_environment '' $USER $USER
 CopyFileTo /homedots/.presets/obs-custom-scene.json $HOME/.presets/obs-custom-scene.json '' $USER $USER
