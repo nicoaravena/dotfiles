@@ -1,8 +1,11 @@
 # create files and folders
+CreateDir $HOME/.config/cairo-dock/themes/personal-custom/icons '' $USER $USER
 CreateDir $HOME/.config/cinnamon/spices/Cinnamenu@json '' $USER $USER
 CreateDir $HOME/.config/cinnamon/spices/expo@cinnamon.org '' $USER $USER
 CreateDir $HOME/.config/cinnamon/spices/favorites@cinnamon.org '' $USER $USER
 CreateDir $HOME/.config/cinnamon/spices/settings-example@cinnamon.org '' $USER $USER
+CreateDir $HOME/.config/obs-studio/basic/profiles/personal '' $USER $USER
+CreateDir $HOME/.config/obs-studio/basic/scenes '' $USER $USER
 CreateDir $HOME/.config/zed/themes '' $USER $USER
 CreateFile $HOME/.config/vesktop/settings/quickCss.css '' $USER $USER > /dev/null
 
@@ -21,6 +24,37 @@ CopyFileTo /homedots/.config/autostart/firefox-developer-edition.desktop $HOME/.
 CopyFileTo /homedots/.config/autostart/proton-pass.desktop $HOME/.config/autostart/proton-pass.desktop '' $USER $USER
 CopyFileTo /homedots/.config/autostart/proton.vpn.app.gtk.desktop $HOME/.config/autostart/proton.vpn.app.gtk.desktop '' $USER $USER
 CopyFileTo /homedots/.config/autostart/zeitgeist-datahub.desktop $HOME/.config/autostart/zeitgeist-datahub.desktop '' $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/cairo-dock-simple.conf $HOME/.config/cairo-dock/themes/personal-custom/cairo-dock-simple.conf '' $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/cairo-dock.conf $HOME/.config/cairo-dock/themes/personal-custom/cairo-dock.conf '' $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/images/active.png $HOME/.config/cairo-dock/themes/personal-custom/images/active.png '' $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/images/bg.svg $HOME/.config/cairo-dock/themes/personal-custom/images/bg.svg '' $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/images/indicator.png $HOME/.config/cairo-dock/themes/personal-custom/images/indicator.png '' $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/launchers/02separator.desktop $HOME/.config/cairo-dock/themes/personal-custom/launchers/02separator.desktop 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/launchers/spotify-launcher.desktop $HOME/.config/cairo-dock/themes/personal-custom/launchers/spotify-launcher.desktop 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/launchers/steam.desktop $HOME/.config/cairo-dock/themes/personal-custom/launchers/steam.desktop 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/Animated-icons/Animated-icons.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Animated-icons/Animated-icons.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/Clipper/Clipper.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Clipper/Clipper.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/Dbus/Dbus.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Dbus/Dbus.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/Folders/Folders.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Folders/Folders.conf '' $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/GMenu/GMenu.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/GMenu/GMenu.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/Help/Help.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Help/Help.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/Recent-Events/Recent-Events.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Recent-Events/Recent-Events.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/Remote-Control/Remote-Control.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Remote-Control/Remote-Control.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/dialog-rendering/dialog-rendering.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/dialog-rendering/dialog-rendering.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/dnd2share/dnd2share.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/dnd2share/dnd2share.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/drop_indicator/drop_indicator.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/drop_indicator/drop_indicator.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/icon-effect/icon-effect.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/icon-effect/icon-effect.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/illusion/illusion.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/illusion/illusion.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/logout/logout.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/logout/logout.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/musicPlayer/musicPlayer.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/musicPlayer/musicPlayer.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/quick-browser/quick-browser.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/quick-browser/quick-browser.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/rendering/rendering.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/rendering/rendering.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/shortcuts/shortcuts.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/shortcuts/shortcuts.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/showDesktop/showDesktop.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/showDesktop/showDesktop.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/stack/stack.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/stack/stack.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/plug-ins/switcher/switcher.conf $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/switcher/switcher.conf 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/preview $HOME/.config/cairo-dock/themes/personal-custom/preview 755 $USER $USER
+CopyFileTo /homedots/.config/cairo-dock/themes/personal-custom/readme $HOME/.config/cairo-dock/themes/personal-custom/readme 755 $USER $USER
 CopyFileTo /homedots/.config/cinnamon/spices/betterlock/betterlock.json $HOME/.config/cinnamon/spices/betterlock/betterlock.json '' $USER $USER
 CopyFileTo /homedots/.config/cinnamon/spices/bluetooth-battery@zamszowy/15.json $HOME/.config/cinnamon/spices/bluetooth-battery@zamszowy/15.json '' $USER $USER
 CopyFileTo /homedots/.config/cinnamon/spices/calendar@cinnamon.org/13.json $HOME/.config/cinnamon/spices/calendar@cinnamon.org/13.json '' $USER $USER
@@ -50,6 +84,21 @@ CopyFileTo /homedots/.config/MangoHud/default.conf $HOME/.config/MangoHud/defaul
 CopyFileTo /homedots/.config/MangoHud/fps_only.conf $HOME/.config/MangoHud/fps_only.conf '' $USER $USER
 CopyFileTo /homedots/.config/MangoHud/minimal.conf $HOME/.config/MangoHud/minimal.conf '' $USER $USER
 CopyFileTo /homedots/.config/MangoHud/Profile.conf $HOME/.config/MangoHud/Profile.conf '' $USER $USER
+CopyFileTo /homedots/.config/nvim/lsp/clangd.lua $HOME/.config/nvim/lsp/clangd.lua '' $USER $USER
+CopyFileTo /homedots/.config/nvim/lsp/jsonls.lua $HOME/.config/nvim/lsp/jsonls.lua '' $USER $USER
+CopyFileTo /homedots/.config/nvim/lsp/lua-language-server.lua $HOME/.config/nvim/lsp/lua-language-server.lua '' $USER $USER
+CopyFileTo /homedots/.config/nvim/lsp/ts_ls.lua $HOME/.config/nvim/lsp/ts_ls.lua '' $USER $USER
+CopyFileTo /homedots/.config/nvim/lsp/ty.lua $HOME/.config/nvim/lsp/ty.lua '' $USER $USER
+CopyFileTo /homedots/.config/nvim/lua/config/lazy.lua $HOME/.config/nvim/lua/config/lazy.lua '' $USER $USER
+CopyFileTo /homedots/.config/nvim/lua/config/nvim-lint.lua $HOME/.config/nvim/lua/config/nvim-lint.lua '' $USER $USER
+CopyFileTo /homedots/.config/nvim/lua/config/nvim-treesitter.lua $HOME/.config/nvim/lua/config/nvim-treesitter.lua '' $USER $USER
+CopyFileTo /homedots/.config/nvim/lua/plugins/catppuccin.lua $HOME/.config/nvim/lua/plugins/catppuccin.lua '' $USER $USER
+CopyFileTo /homedots/.config/nvim/lua/plugins/dashboard.lua $HOME/.config/nvim/lua/plugins/dashboard.lua '' $USER $USER
+CopyFileTo /homedots/.config/nvim/lua/plugins/noice.lua $HOME/.config/nvim/lua/plugins/noice.lua '' $USER $USER
+CopyFileTo /homedots/.config/nvim/lua/plugins/tree-sitter.lua $HOME/.config/nvim/lua/plugins/tree-sitter.lua '' $USER $USER
+CopyFileTo /homedots/.config/nvim/lua/plugins/which-key.lua $HOME/.config/nvim/lua/plugins/which-key.lua '' $USER $USER
+CopyFileTo /homedots/.config/obs-studio/basic/profiles/personal/basic.ini $HOME/.config/obs-studio/basic/profiles/personal/basic.ini '' $USER $USER
+CopyFileTo /homedots/.config/obs-studio/basic/scenes/ProtonGaming.json $HOME/.config/obs-studio/basic/scenes/ProtonGaming.json '' $USER $USER
 CopyFileTo /homedots/.config/opencode/opencode.jsonc $HOME/.config/opencode/opencode.jsonc '' $USER $USER
 CopyFileTo /homedots/.config/opencode/tui.jsonc $HOME/.config/opencode/tui.jsonc '' $USER $USER
 CopyFileTo /homedots/.config/protonfixes/config.ini $HOME/.config/protonfixes/config.ini '' $USER $USER
@@ -71,10 +120,6 @@ CopyFileTo /homedots/.editorconfig $HOME/.editorconfig 664 $USER $USER
 CopyFileTo /homedots/.ignore $HOME/.ignore '' $USER $USER
 CopyFileTo /homedots/.nv/nvidia-application-profiles-rc $HOME/.nv/nvidia-application-profiles-rc '' $USER $USER
 CopyFileTo /homedots/.pam_environment $HOME/.pam_environment '' $USER $USER
-CopyFileTo /homedots/.presets/obs-custom-scene.json $HOME/.presets/obs-custom-scene.json '' $USER $USER
-CopyFileTo /homedots/.presets/personal-custom.tar.gz $HOME/.presets/personal-custom.tar.gz '' $USER $USER
-CopyFileTo /homedots/.presets/personal-easyeffects.json $HOME/.presets/personal-easyeffects.json '' $USER $USER
-CopyFileTo /homedots/.presets/personal-obs/basic.ini $HOME/.presets/personal-obs/basic.ini '' $USER $USER
 CopyFileTo /homedots/.xprofile $HOME/.xprofile '' $USER $USER
 CopyFileTo /homedots/.zshenv $HOME/.zshenv '' $USER $USER
 CopyFileTo /homedots/.zshrc $HOME/.zshrc '' $USER $USER
@@ -85,6 +130,60 @@ SetFileProperty $HOME/.claude group $USER
 SetFileProperty $HOME/.claude owner $USER
 SetFileProperty $HOME/.config/autostart group $USER
 SetFileProperty $HOME/.config/autostart owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/images group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/images owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/launchers group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/launchers owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Animated-icons group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Animated-icons owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Clipper group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Clipper owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Dbus group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Dbus owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Folders group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Folders owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/GMenu group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/GMenu owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Help group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Help owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Recent-Events group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Recent-Events owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Remote-Control group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/Remote-Control owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/dialog-rendering group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/dialog-rendering owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/dnd2share group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/dnd2share owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/drop_indicator group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/drop_indicator owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/icon-effect group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/icon-effect owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/illusion group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/illusion owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/logout group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/logout owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/musicPlayer group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/musicPlayer owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/quick-browser group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/quick-browser owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/rendering group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/rendering owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/shortcuts group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/shortcuts owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/showDesktop group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/showDesktop owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/stack group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/stack owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/switcher group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins/switcher owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom/plug-ins owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes/personal-custom owner $USER
+SetFileProperty $HOME/.config/cairo-dock/themes group $USER
+SetFileProperty $HOME/.config/cairo-dock/themes owner $USER
+SetFileProperty $HOME/.config/cairo-dock group $USER
+SetFileProperty $HOME/.config/cairo-dock owner $USER
 SetFileProperty $HOME/.config/cinnamon/spices/betterlock group $USER
 SetFileProperty $HOME/.config/cinnamon/spices/betterlock owner $USER
 SetFileProperty $HOME/.config/cinnamon/spices/bluetooth-battery@zamszowy group $USER
@@ -127,6 +226,26 @@ SetFileProperty $HOME/.config/kitty owner $USER
 SetFileProperty $HOME/.config/kitty/pushendonut.gif mode 755
 SetFileProperty $HOME/.config/MangoHud group $USER
 SetFileProperty $HOME/.config/MangoHud owner $USER
+SetFileProperty $HOME/.config/nvim/lsp group $USER
+SetFileProperty $HOME/.config/nvim/lsp owner $USER
+SetFileProperty $HOME/.config/nvim/lua/config group $USER
+SetFileProperty $HOME/.config/nvim/lua/config owner $USER
+SetFileProperty $HOME/.config/nvim/lua/plugins group $USER
+SetFileProperty $HOME/.config/nvim/lua/plugins owner $USER
+SetFileProperty $HOME/.config/nvim/lua group $USER
+SetFileProperty $HOME/.config/nvim/lua owner $USER
+SetFileProperty $HOME/.config/nvim group $USER
+SetFileProperty $HOME/.config/nvim owner $USER
+SetFileProperty $HOME/.config/obs-studio/basic/profiles/personal group $USER
+SetFileProperty $HOME/.config/obs-studio/basic/profiles/personal owner $USER
+SetFileProperty $HOME/.config/obs-studio/basic/profiles group $USER
+SetFileProperty $HOME/.config/obs-studio/basic/profiles owner $USER
+SetFileProperty $HOME/.config/obs-studio/basic/scenes group $USER
+SetFileProperty $HOME/.config/obs-studio/basic/scenes owner $USER
+SetFileProperty $HOME/.config/obs-studio/basic group $USER
+SetFileProperty $HOME/.config/obs-studio/basic owner $USER
+SetFileProperty $HOME/.config/obs-studio group $USER
+SetFileProperty $HOME/.config/obs-studio owner $USER
 SetFileProperty $HOME/.config/opencode group $USER
 SetFileProperty $HOME/.config/opencode owner $USER
 SetFileProperty $HOME/.config/protonfixes group $USER
@@ -154,10 +273,6 @@ SetFileProperty $HOME/.config/wireplumber/wireplumber.conf.d group $USER
 SetFileProperty $HOME/.config/wireplumber/wireplumber.conf.d owner $USER
 SetFileProperty $HOME/.config/zed group $USER
 SetFileProperty $HOME/.config/zed owner $USER
-SetFileProperty $HOME/.presets group $USER
-SetFileProperty $HOME/.presets owner $USER
-SetFileProperty $HOME/.presets/personal-obs group $USER
-SetFileProperty $HOME/.presets/personal-obs owner $USER
 SetFileProperty $HOME/.config owner $USER
 SetFileProperty $HOME/.nv group $USER
 SetFileProperty $HOME/.nv mode 700

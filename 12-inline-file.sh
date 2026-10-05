@@ -14,6 +14,11 @@ if [[ $aconfmgr_action == 'apply' ]]; then
         read -p 'Set git user.email (E.g. john.doe@example.org): ' git_email
         git config --global user.email ${git_email}
     fi
+    if [[ -f $HOME/.config/nvim/init.lua ]]; then
+      RemoveFile $HOME/.config/nvim/init.lua
+    fi
+    CreateDir $HOME/.config/nvim '' $USER $USER
+    echo 'require("config.lazy")' > $HOME/.config/nvim/init.lua
 fi
 
 RevealHomeFolder
