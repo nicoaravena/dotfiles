@@ -68,6 +68,7 @@ CopyFileTo /homedots/.config/zed/settings.json $HOME/.config/zed/settings.json 6
 CopyFileTo /homedots/.conkyrc $HOME/.conkyrc '' $USER $USER
 CopyFileTo /homedots/.dmrc $HOME/.dmrc '' $USER $USER
 CopyFileTo /homedots/.editorconfig $HOME/.editorconfig 664 $USER $USER
+CopyFileTo /homedots/.nv/nvidia-application-profiles-rc $HOME/.nv/nvidia-application-profiles-rc '' $USER $USER
 CopyFileTo /homedots/.pam_environment $HOME/.pam_environment '' $USER $USER
 CopyFileTo /homedots/.presets/obs-custom-scene.json $HOME/.presets/obs-custom-scene.json '' $USER $USER
 CopyFileTo /homedots/.presets/personal-custom.tar.gz $HOME/.presets/personal-custom.tar.gz '' $USER $USER
@@ -78,12 +79,11 @@ CopyFileTo /homedots/.zshenv $HOME/.zshenv '' $USER $USER
 CopyFileTo /homedots/.zshrc $HOME/.zshrc '' $USER $USER
 
 
+SetFileProperty / mode 555
 SetFileProperty $HOME/.claude group $USER
 SetFileProperty $HOME/.claude owner $USER
 SetFileProperty $HOME/.config/autostart group $USER
 SetFileProperty $HOME/.config/autostart owner $USER
-SetFileProperty $HOME/.config/cinnamon group $USER
-SetFileProperty $HOME/.config/cinnamon owner $USER
 SetFileProperty $HOME/.config/cinnamon/spices/betterlock group $USER
 SetFileProperty $HOME/.config/cinnamon/spices/betterlock owner $USER
 SetFileProperty $HOME/.config/cinnamon/spices/bluetooth-battery@zamszowy group $USER
@@ -92,7 +92,6 @@ SetFileProperty $HOME/.config/cinnamon/spices/calendar@cinnamon.org group $USER
 SetFileProperty $HOME/.config/cinnamon/spices/calendar@cinnamon.org owner $USER
 SetFileProperty $HOME/.config/cinnamon/spices/cornerbar@cinnamon.org group $USER
 SetFileProperty $HOME/.config/cinnamon/spices/cornerbar@cinnamon.org owner $USER
-SetFileProperty $HOME/.config/cinnamon/spices group $USER
 SetFileProperty $HOME/.config/cinnamon/spices/grouped-window-list@cinnamon.org group $USER
 SetFileProperty $HOME/.config/cinnamon/spices/grouped-window-list@cinnamon.org owner $USER
 SetFileProperty $HOME/.config/cinnamon/spices/inhibit@cinnamon.org group $USER
@@ -103,7 +102,6 @@ SetFileProperty $HOME/.config/cinnamon/spices/network@cinnamon.org group $USER
 SetFileProperty $HOME/.config/cinnamon/spices/network@cinnamon.org owner $USER
 SetFileProperty $HOME/.config/cinnamon/spices/notifications@cinnamon.org group $USER
 SetFileProperty $HOME/.config/cinnamon/spices/notifications@cinnamon.org owner $USER
-SetFileProperty $HOME/.config/cinnamon/spices owner $USER
 SetFileProperty $HOME/.config/cinnamon/spices/panel-launchers@cinnamon.org group $USER
 SetFileProperty $HOME/.config/cinnamon/spices/panel-launchers@cinnamon.org owner $USER
 SetFileProperty $HOME/.config/cinnamon/spices/power@cinnamon.org group $USER
@@ -116,78 +114,10 @@ SetFileProperty $HOME/.config/cinnamon/spices/weather@mockturtl group $USER
 SetFileProperty $HOME/.config/cinnamon/spices/weather@mockturtl owner $USER
 SetFileProperty $HOME/.config/cinnamon/spices/workspace-switcher@cinnamon.org group $USER
 SetFileProperty $HOME/.config/cinnamon/spices/workspace-switcher@cinnamon.org owner $USER
-SetFileProperty $HOME/.config/cinnamon/spices/Cinnamenu@json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/Cinnamenu@json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/betterlock/betterlock.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/betterlock/betterlock.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/betterlock group ''
-SetFileProperty $HOME/.config/cinnamon/spices/betterlock owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/bluetooth-battery@zamszowy/15.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/bluetooth-battery@zamszowy/15.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/bluetooth-battery@zamszowy group ''
-SetFileProperty $HOME/.config/cinnamon/spices/bluetooth-battery@zamszowy owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/calendar@cinnamon.org/13.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/calendar@cinnamon.org/13.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/calendar@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/calendar@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/cornerbar@cinnamon.org/14.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/cornerbar@cinnamon.org/14.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/cornerbar@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/cornerbar@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/expo@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/expo@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/favorites@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/favorites@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/grouped-window-list@cinnamon.org/2.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/grouped-window-list@cinnamon.org/2.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/grouped-window-list@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/grouped-window-list@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/inhibit@cinnamon.org/inhibit@cinnamon.org.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/inhibit@cinnamon.org/inhibit@cinnamon.org.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/inhibit@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/inhibit@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/menu@cinnamon.org/23.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/menu@cinnamon.org/23.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/menu@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/menu@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/network@cinnamon.org/network@cinnamon.org.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/network@cinnamon.org/network@cinnamon.org.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/network@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/network@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/notifications@cinnamon.org/notifications@cinnamon.org.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/notifications@cinnamon.org/notifications@cinnamon.org.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/notifications@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/notifications@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/panel-launchers@cinnamon.org/37.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/panel-launchers@cinnamon.org/37.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/panel-launchers@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/panel-launchers@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/power@cinnamon.org/power@cinnamon.org.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/power@cinnamon.org/power@cinnamon.org.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/power@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/power@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/printers@cinnamon.org/6.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/printers@cinnamon.org/6.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/printers@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/printers@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/settings-example@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/settings-example@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/sound@cinnamon.org/sound@cinnamon.org.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/sound@cinnamon.org/sound@cinnamon.org.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/sound@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/sound@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/weather@mockturtl/19.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/weather@mockturtl/19.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/weather@mockturtl group ''
-SetFileProperty $HOME/.config/cinnamon/spices/weather@mockturtl owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/workspace-switcher@cinnamon.org/20.json group ''
-SetFileProperty $HOME/.config/cinnamon/spices/workspace-switcher@cinnamon.org/20.json owner ''
-SetFileProperty $HOME/.config/cinnamon/spices/workspace-switcher@cinnamon.org group ''
-SetFileProperty $HOME/.config/cinnamon/spices/workspace-switcher@cinnamon.org owner ''
-SetFileProperty $HOME/.config/cinnamon/spices group ''
-SetFileProperty $HOME/.config/cinnamon/spices owner ''
-SetFileProperty $HOME/.config/cinnamon group ''
-SetFileProperty $HOME/.config/cinnamon owner ''
+SetFileProperty $HOME/.config/cinnamon/spices group $USER
+SetFileProperty $HOME/.config/cinnamon/spices owner $USER
+SetFileProperty $HOME/.config/cinnamon group $USER
+SetFileProperty $HOME/.config/cinnamon owner $USER
 SetFileProperty $HOME/.config/fastfetch group $USER
 SetFileProperty $HOME/.config/fastfetch owner $USER
 SetFileProperty $HOME/.config group $USER
@@ -198,7 +128,6 @@ SetFileProperty $HOME/.config/MangoHud group $USER
 SetFileProperty $HOME/.config/MangoHud owner $USER
 SetFileProperty $HOME/.config/opencode group $USER
 SetFileProperty $HOME/.config/opencode owner $USER
-SetFileProperty $HOME/.config owner $USER
 SetFileProperty $HOME/.config/protonfixes group $USER
 SetFileProperty $HOME/.config/protonfixes owner $USER
 SetFileProperty $HOME/.config/Proton group $USER
@@ -228,6 +157,10 @@ SetFileProperty $HOME/.presets group $USER
 SetFileProperty $HOME/.presets owner $USER
 SetFileProperty $HOME/.presets/personal-obs group $USER
 SetFileProperty $HOME/.presets/personal-obs owner $USER
+SetFileProperty $HOME/.config owner $USER
+SetFileProperty $HOME/.nv group $USER
+SetFileProperty $HOME/.nv mode 700
+SetFileProperty $HOME/.nv owner $USER
 SetFileProperty $HOME group $USER
 SetFileProperty $HOME mode 710
 SetFileProperty $HOME owner $USER

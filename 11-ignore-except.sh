@@ -62,7 +62,7 @@ home_white_list=(
     '.claude/CLAUDE.md'
     '.conkyrc'
     '.config/autostart/*'
-    '.config/cinnamon/spices'
+    '.config/cinnamon/spices/*'
     '.config/fastfetch/*'
     '.config/kitty/*'
     '.config/MangoHud/*'
