@@ -106,6 +106,7 @@ AddPackage musescore # Create, play and print beautiful sheet music
 #AddPackage nano # Pico editor clone with enhancements
 #AddPackage nano-syntax-highlighting # Nano editor syntax highlighting enhancements
 AddPackage ncdu # Disk usage analyzer with an ncurses interface
+AddPackage nemo-fileroller # File archiver extension for Nemo
 AddPackage nemo-python # Python binding for Nemo components
 AddPackage neovim # Fork of Vim aiming to improve user experience, plugins, and GUIs
 AddPackage net-tools # Configuration tools for Linux networking
@@ -159,6 +160,9 @@ AddPackage tlp # Linux Advanced Power Management
 AddPackage tlp-pd # Linux Advanced Power Management - Power Profiles Daemon
 AddPackage tlp-rdw # Linux Advanced Power Management - Radio Device Wizard
 AddPackage tree # A directory listing program displaying a depth indented list of files
+AddPackage tree-sitter-bash # Bash grammar for tree-sitter
+AddPackage tree-sitter-cli # CLI tool for developing, testing, and using Tree-sitter parsers
+AddPackage tree-sitter-python # Python grammar for tree-sitter
 AddPackage ttf-cascadia-code # A monospaced font by Microsoft that includes programming ligatures
 AddPackage ttf-cascadia-code-nerd # Patched font Cascadia Code (Caskaydia) from nerd fonts library
 AddPackage ttf-dejavu # Font family based on the Bitstream Vera Fonts with a wider range of characters
