@@ -11,6 +11,7 @@ CopyFile /etc/mkinitcpio.conf.d/custom.conf
 CopyFile /etc/modprobe.d/custom-nvidia.conf
 CopyFile /etc/systemd/logind.conf.d/custom.conf
 CopyFile /etc/systemd/resolved.conf.d/quad9.conf
+CopyFile /etc/systemd/system/nvidia-lock-clocks.service
 CopyFile /etc/systemd/timesyncd.conf.d/cl.conf
 CopyFile /etc/tlp.d/10-custom.conf
 CopyFile /etc/udev/rules.d/80-nvidia-pm.rules

@@ -1,0 +1,16 @@
+# Change clocks to avoid gpu overflow
+[Unit]
+Description=Lock NVIDIA GPU and Memory Clocks
+After=nvidia-persistenced.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/nvidia-smi --lock-memory-clocks=0,6001
+ExecStart=/usr/bin/nvidia-smi --lock-gpu-clocks=0,1545 --mode=1
+#ExecStart=/usr/bin/nvidia-smi --persistence-mode=1
+RemainAfterExit=yes
+ExecStop=/usr/bin/nvidia-smi --reset-memory-clocks
+ExecStop=/usr/bin/nvidia-smi --reset-gpu-clocks
+
+[Install]
+WantedBy=multi-user.target

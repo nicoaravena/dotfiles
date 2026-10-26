@@ -6,6 +6,20 @@
                 "matches": "Warframe.exe"
             },
             "profile": "enable_gsync"
+        },
+        {
+            "pattern": {
+                "feature": "procname",
+                "matches": "Warframe.x64.exe"
+            },
+            "profile": "enable_gsync"
+        },
+        {
+            "pattern": {
+                "feature": "procname",
+                "matches": "Soulframe.x64.exe"
+            },
+            "profile": "enable_gsync"
         }
     ],
     "profiles": [
@@ -14,6 +28,10 @@
             "settings": [
                 {
                     "key": "GLGSYNCAllowed",
+                    "value": true
+                },
+                {
+                    "key": "GLShaderDiskCache",
                     "value": true
                 }
             ]

@@ -48,6 +48,7 @@ etc_white_list=(
     'resolv.conf'
     'systemd/logind.conf.d/*'
     'systemd/resolved.conf.d/*'
+    'systemd/system/nvidia-lock-clocks.service'
     'systemd/timesyncd.conf.d/*'
     'tlp.d/*'
     'udev/rules.d/*'
