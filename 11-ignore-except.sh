@@ -37,6 +37,7 @@ function IgnorePathsExcept() {
 }
 
 etc_white_list=(
+    'gamemode.ini'
     'lightdm/lightdm.conf.d/*'
     'lightdm/slick-greeter.conf'
     'locale.gen'
