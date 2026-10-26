@@ -2,7 +2,7 @@
     "protocol": "wireguard",
     "killswitch": 0,
     "custom_dns": {
-        "enabled": true,
+        "enabled": false,
         "ip_list": [
             {
                 "ip": "9.9.9.9",
@@ -58,20 +58,11 @@
                 },
                 "include": {
                     "mode": "include",
-                    "app_paths": [
-                        "/usr/bin/env",
-                        "\"$HOME/.appmanager/Bionic\"",
-                        "/usr/bin/blender",
-                        "\"$HOME/.appmanager/Cherry",
-                        "/usr/bin/mscore",
-                        "/usr/bin/obs",
-                        "\"$HOME/.appmanager/ProtonUp-Qt\"",
-                        "/usr/bin/vesktop",
-                        "/usr/bin/zeditor"
-                    ],
+                    "app_paths": [],
                     "ip_ranges": []
                 }
             }
         }
-    }
+    },
+    "telemetry": true
 }

@@ -1,5 +1,7 @@
 CopyFile /etc/gamemode.ini
+CopyFile /etc/NetworkManager/conf.d/00-default.conf
 CopyFile /etc/NetworkManager/conf.d/dhcp-send-hostname.conf
+CopyFile /etc/NetworkManager/conf.d/new-mac-on-boot.conf
 CopyFile /etc/NetworkManager/conf.d/powersave.conf
 CopyFile /etc/nftables.conf
 CopyFile /etc/X11/xorg.conf.d/00-keyboard.conf
@@ -19,4 +21,4 @@ CopyFile /etc/udev/rules.d/80-nvidia-pm.rules
 CopyFile /etc/locale.gen
 CopyFile /etc/vconsole.conf
 
-CreateLink /etc/resolv.conf /run/systemd/resolve/resolv.conf
+CreateLink /etc/resolv.conf ../run/systemd/resolve/stub-resolv.conf
