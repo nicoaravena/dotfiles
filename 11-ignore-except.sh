@@ -61,6 +61,7 @@ usr_white_list=(
 IgnorePathsExcept /usr "${usr_white_list[@]}"
 
 home_white_list=(
+    '.agents/*'
     '.bashrc'
     '.bash_profile'
     '.bash_aliases'
@@ -76,8 +77,9 @@ home_white_list=(
     '.config/nvim/lsp/*'
     '.config/nvim/lua/*'
     '.config/obs-studio/basic/*'
+    '.config/opencode/AGENTS.md'
+    '.config/opencode/cli.json'
     '.config/opencode/opencode.jsonc'
-    '.config/opencode/tui.jsonc'
     '.config/Proton/VPN/settings.json'
     '.config/protonfixes/config.ini'
     '.config/vesktop/settings.json'
@@ -90,6 +92,8 @@ home_white_list=(
     '.dmrc'
     '.editorconfig'
     '.ignore'
+    '.lmstudio/config-presets/*'
+    '.lmstudio/settings.json'
     '.nv/nvidia-application-profiles-rc'
     '.pam_environment'
     '.xprofile'

@@ -39,3 +39,8 @@ fi
 if [[ -f $(which codium) ]] && [[ ! -f $(which code) ]]; then
   alias code=codium
 fi
+
+if [[ -f $(which pnpm) ]]; then
+  # override npm with pnpm
+  alias npm=pnpm
+fi

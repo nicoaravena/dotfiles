@@ -1,4 +1,5 @@
 # create files and folders
+CreateDir $HOME/.agents '' $USER $USER
 CreateDir $HOME/.config/cairo-dock/themes/personal-custom/icons '' $USER $USER
 CreateDir $HOME/.config/cinnamon/spices/Cinnamenu@json '' $USER $USER
 CreateDir $HOME/.config/cinnamon/spices/expo@cinnamon.org '' $USER $USER
@@ -9,13 +10,12 @@ CreateDir $HOME/.config/obs-studio/basic/scenes '' $USER $USER
 CreateDir $HOME/.config/zed/themes '' $USER $USER
 CreateFile $HOME/.config/vesktop/settings/quickCss.css '' $USER $USER > /dev/null
 
+CopyFileTo /homedots/.agents/AGENTS.md $HOME/.agents/AGENTS.md '' $USER $USER
 CopyFileTo /homedots/.bash_aliases $HOME/.bash_aliases '' $USER $USER
 CopyFileTo /homedots/.bash_profile $HOME/.bash_profile '' $USER $USER
 CopyFileTo /homedots/.bash_profile $HOME/.bash_profile '' $USER $USER
 CopyFileTo /homedots/.bashrc $HOME/.bashrc '' $USER $USER
 CopyFileTo /homedots/.bashrc $HOME/.bashrc '' $USER $USER
-CopyFileTo /homedots/.claude/CLAUDE.md  $HOME/.claude/CLAUDE.md '' $USER $USER
-CopyFileTo /homedots/.claude/settings.json $HOME/.claude/settings.json '' $USER $USER
 CopyFileTo /homedots/.claude/settings.json $HOME/.claude/settings.json '' $USER $USER
 CopyFileTo /homedots/.config/autostart/cairo-dock.desktop $HOME/.config/autostart/cairo-dock.desktop '' $USER $USER
 CopyFileTo /homedots/.config/autostart/com.github.wwmm.easyeffects.desktop $HOME/.config/autostart/com.github.wwmm.easyeffects.desktop '' $USER $USER
@@ -100,7 +100,7 @@ CopyFileTo /homedots/.config/nvim/lua/plugins/which-key.lua $HOME/.config/nvim/l
 CopyFileTo /homedots/.config/obs-studio/basic/profiles/personal/basic.ini $HOME/.config/obs-studio/basic/profiles/personal/basic.ini '' $USER $USER
 CopyFileTo /homedots/.config/obs-studio/basic/scenes/ProtonGaming.json $HOME/.config/obs-studio/basic/scenes/ProtonGaming.json '' $USER $USER
 CopyFileTo /homedots/.config/opencode/opencode.jsonc $HOME/.config/opencode/opencode.jsonc '' $USER $USER
-CopyFileTo /homedots/.config/opencode/tui.jsonc $HOME/.config/opencode/tui.jsonc '' $USER $USER
+CopyFileTo /homedots/.config/opencode/cli.json $HOME/.config/opencode/cli.json '' $USER $USER
 CopyFileTo /homedots/.config/protonfixes/config.ini $HOME/.config/protonfixes/config.ini '' $USER $USER
 CopyFileTo /homedots/.config/Proton/VPN/settings.json $HOME/.config/Proton/VPN/settings.json '' $USER $USER
 CopyFileTo /homedots/.config/vesktop/settings.json $HOME/.config/vesktop/settings.json '' $USER $USER
@@ -118,14 +118,22 @@ CopyFileTo /homedots/.conkyrc $HOME/.conkyrc '' $USER $USER
 CopyFileTo /homedots/.dmrc $HOME/.dmrc '' $USER $USER
 CopyFileTo /homedots/.editorconfig $HOME/.editorconfig 664 $USER $USER
 CopyFileTo /homedots/.ignore $HOME/.ignore '' $USER $USER
+CopyFileTo /homedots/.lmstudio/config-presets/custom\ sloth\ qwen3\ coder.preset.json $HOME/.lmstudio/config-presets/custom\ sloth\ qwen3\ coder.preset.json '' $USER $USER
+CopyFileTo /homedots/.lmstudio/settings.json $HOME/.lmstudio/settings.json '' $USER $USER
 CopyFileTo /homedots/.nv/nvidia-application-profiles-rc $HOME/.nv/nvidia-application-profiles-rc '' $USER $USER
 CopyFileTo /homedots/.pam_environment $HOME/.pam_environment '' $USER $USER
 CopyFileTo /homedots/.xprofile $HOME/.xprofile '' $USER $USER
 CopyFileTo /homedots/.zshenv $HOME/.zshenv '' $USER $USER
 CopyFileTo /homedots/.zshrc $HOME/.zshrc '' $USER $USER
 
+# Sym Links
+CreateLink $HOME/.claude/CLAUDE.md $HOME/.agents/AGENTS.md
+CreateLink $HOME/.config/opencode/AGENTS.md $HOME/.agents/AGENTS.md $USER $USER
 
+# Set Props
 SetFileProperty / mode 555
+SetFileProperty $HOME/.claude/CLAUDE.md group $USER
+SetFileProperty $HOME/.claude/CLAUDE.md owner $USER
 SetFileProperty $HOME/.claude group $USER
 SetFileProperty $HOME/.claude owner $USER
 SetFileProperty $HOME/.config/autostart group $USER
@@ -246,6 +254,7 @@ SetFileProperty $HOME/.config/obs-studio/basic group $USER
 SetFileProperty $HOME/.config/obs-studio/basic owner $USER
 SetFileProperty $HOME/.config/obs-studio group $USER
 SetFileProperty $HOME/.config/obs-studio owner $USER
+SetFileProperty $HOME/.config/opencode/cli.json mode 600
 SetFileProperty $HOME/.config/opencode group $USER
 SetFileProperty $HOME/.config/opencode owner $USER
 SetFileProperty $HOME/.config/protonfixes group $USER
@@ -274,6 +283,10 @@ SetFileProperty $HOME/.config/wireplumber/wireplumber.conf.d owner $USER
 SetFileProperty $HOME/.config/zed group $USER
 SetFileProperty $HOME/.config/zed owner $USER
 SetFileProperty $HOME/.config owner $USER
+SetFileProperty $HOME/.lmstudio/config-presets group $USER
+SetFileProperty $HOME/.lmstudio/config-presets owner $USER
+SetFileProperty $HOME/.lmstudio group $USER
+SetFileProperty $HOME/.lmstudio owner $USER
 SetFileProperty $HOME/.nv group $USER
 SetFileProperty $HOME/.nv mode 700
 SetFileProperty $HOME/.nv owner $USER

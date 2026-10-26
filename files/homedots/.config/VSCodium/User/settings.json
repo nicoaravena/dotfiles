@@ -2,7 +2,9 @@
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "bearded-icons",
     "projectManager.git.baseFolders": [
-        "~/dev"
+        "~/dev",
+        "~/workspace",
+        "~/work"
     ],
     "redhat.telemetry.enabled": false,
     "json.schemaDownload.trustedDomains": {
@@ -29,5 +31,43 @@
         "spring-boot-properties",
         "azcli",
         "bats"
-    ]
+    ],
+    "catppuccin.bracketMode": "dimmed",
+    "catppuccin.extraBordersEnabled": true,
+    "evenBetterToml.formatter.allowedBlankLines": 2,
+    "evenBetterToml.formatter.arrayTrailingComma": true,
+    "evenBetterToml.formatter.arrayAutoExpand": true,
+    "evenBetterToml.formatter.columnWidth": 88,
+    "git.blame.editorDecoration.enabled": true,
+    "git.blame.ignoreWhitespace": true,
+    "ruff.format.backend": "uv",
+    "ruff.lineLength": 88,
+    "npm.autoDetect": "off",
+    "editor.minimap.scale": 2,
+    "chat.agent.enabled": false,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.enableVisualBell": true,
+    "terminal.integrated.fontLigatures.enabled": true,
+    "editor.fontFamily": "'Fira Code Retina', monospace",
+    "editor.wordWrap": "wordWrapColumn",
+    "files.autoSave": "onFocusChange",
+    "editor.fontLigatures": true,
+    "telemetry.feedback.enabled": false,
+    "workbench.activityBar.compact": true,
+    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+    "workbench.preferredHighContrastColorTheme": "Catppuccin Mocha",
+    "workbench.preferredHighContrastLightColorTheme": "Catppuccin Latte",
+    "workbench.preferredLightColorTheme": "Catppuccin Latte",
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.indent": 12,
+    "workbench.view.alwaysShowHeaderActions": true,
+    "workbench.view.showQuietly": {
+        "workbench.panel.output": true
+    },
+    "catppuccin.accentColor": "peach",
+    "git.detectWorktrees": true,
+    "debug.breakpointsView.presentation": "tree",
+    "search.defaultViewMode": "tree",
+    "scm.defaultViewMode": "tree"
 }
