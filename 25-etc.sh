@@ -1,3 +1,4 @@
+CopyFile /etc/gamemode.ini
 CopyFile /etc/NetworkManager/conf.d/dhcp-send-hostname.conf
 CopyFile /etc/NetworkManager/conf.d/powersave.conf
 CopyFile /etc/nftables.conf
