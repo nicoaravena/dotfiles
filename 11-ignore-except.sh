@@ -49,7 +49,7 @@ etc_white_list=(
     'systemd/timesyncd.conf.d/*'
     'tlp.d/*'
     'udev/rules.d/*'
-    'vsconsole.conf'
+    'vconsole.conf'
     'X11/xorg.conf.d/*'
 )
 IgnorePathsExcept /etc "${etc_white_list[@]}"

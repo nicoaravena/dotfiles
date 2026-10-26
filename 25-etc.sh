@@ -14,5 +14,6 @@ CopyFile /etc/systemd/timesyncd.conf.d/cl.conf
 CopyFile /etc/tlp.d/10-custom.conf
 CopyFile /etc/udev/rules.d/80-nvidia-pm.rules
 CopyFile /etc/locale.gen
+CopyFile /etc/vconsole.conf
 
 CreateLink /etc/resolv.conf /run/systemd/resolve/resolv.conf
