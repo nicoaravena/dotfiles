@@ -1,10 +1,10 @@
-AddPackage acpi # Client for battery, power, and thermal readings
 AddPackage acpi_call-lts # A linux kernel module that enables calls to ACPI methods through /proc/acpi/call
+AddPackage acpi # Client for battery, power, and thermal readings
 AddPackage android-tools # Android platform tools
 AddPackage android-udev # Udev rules to connect Android devices to your linux box
 AddPackage atuin # Magical shell history
-AddPackage base # Minimal package set to define a basic Arch Linux installation
 AddPackage base-devel # Basic tools to build Arch Linux packages
+AddPackage base # Minimal package set to define a basic Arch Linux installation
 AddPackage bash-language-server # Bash language server implementation based on Tree Sitter and its grammar for Bash
 AddPackage bat # Cat clone with syntax highlighting and git integration
 AddPackage bind # A complete, highly portable implementation of the DNS protocol
@@ -26,7 +26,6 @@ AddPackage cinnamon-translations # Translations for Cinnamon and Nemo
 AddPackage conky # Light-weight system monitor for X, Wayland, and other things, too
 AddPackage cpio # A tool to copy files into or out of a cpio or tar archive
 AddPackage csvlens # Command line csv viewer
-AddPackage d-spy # D-Bus debugger for GNOME
 AddPackage d2 # A modern diagram scripting language that turns text to diagrams
 AddPackage dbeaver # Free universal SQL Client for developers and database administrators (community edition)
 AddPackage dconf-editor # GSettings editor for GNOME
@@ -35,9 +34,10 @@ AddPackage devhelp # API documentation browser for GNOME
 AddPackage distrobox # Use any linux distribution inside your terminal.
 AddPackage dkms # Dynamic Kernel Modules System
 AddPackage dnsmasq # Lightweight, easy to configure DNS forwarder and DHCP server
-AddPackage docker # Pack, ship and run any application as a lightweight container
 AddPackage docker-buildx # Docker CLI plugin for extended build capabilities with BuildKit
 AddPackage docker-compose # Fast, isolated development environments using Docker
+AddPackage docker # Pack, ship and run any application as a lightweight container
+AddPackage d-spy # D-Bus debugger for GNOME
 AddPackage duf # Disk Usage/Free Utility
 AddPackage easyeffects # Audio Effects for Pipewire applications
 AddPackage efibootmgr # Linux user-space application to modify the EFI Boot Manager
@@ -126,9 +126,9 @@ AddPackage opencl-nvidia # OpenCL implemention for NVIDIA
 AddPackage opencode # The open source coding agent
 AddPackage openssh # SSH protocol implementation for remote login, command execution and file transfer
 AddPackage papirus-icon-theme # Papirus icon theme
-AddPackage pipewire # Low-latency audio/video router and processor
 AddPackage pipewire-alsa # Low-latency audio/video router and processor - ALSA configuration
 AddPackage pipewire-jack # Low-latency audio/video router and processor - JACK replacement
+AddPackage pipewire # Low-latency audio/video router and processor
 AddPackage pipewire-pulse # Low-latency audio/video router and processor - PulseAudio replacement
 AddPackage pkgfile # A tool to search for files in official repository packages
 AddPackage plymouth # Graphical boot splash screen
@@ -136,8 +136,8 @@ AddPackage pnpm # Fast, disk space efficient package manager
 AddPackage podman # A tool for managing OCI containers and pods.
 AddPackage podman-compose # A script to run docker-compose.yml using podman
 AddPackage podman-desktop # Manage Podman and other container engines from a single UI and tray.
-AddPackage proton-vpn-gtk-app # ProtonVPN GTK app, Maintained by Community
 AddPackage protontricks # Run Winetricks commands for Steam Play/Proton games among other common Wine features
+AddPackage proton-vpn-gtk-app # ProtonVPN GTK app, Maintained by Community
 AddPackage python-dnspython # A DNS toolkit for Python
 AddPackage python-pipx # Install and Run Python Applications in Isolated Environments
 AddPackage python-pynvim # Python client for Neovim
@@ -172,8 +172,8 @@ AddPackage umu-launcher # The Unified Launcher for Windows Games on Linux, to ru
 AddPackage unrar # The RAR uncompression program
 AddPackage uv # An extremely fast Python package installer and resolver written in Rust
 AddPackage v4l2loopback-dkms # v4l2-loopback device – module sources
-AddPackage vim # Vi Improved, a highly configurable, improved version of the vi text editor
 AddPackage vimix-cursors # An X Cursor theme inspired by Material design and based on capitaine-cursors
+AddPackage vim # Vi Improved, a highly configurable, improved version of the vi text editor
 AddPackage virt-manager # Desktop user interface for managing virtual machines
 AddPackage vkd3d # Direct3D 12 to Vulkan translation library By WineHQ
 AddPackage vulkan-tools # Vulkan tools and utilities
@@ -192,8 +192,8 @@ AddPackage xed # A small and lightweight text editor
 AddPackage xorg-fonts-100dpi # X.org 100dpi fonts
 AddPackage xorg-fonts-misc # X.org misc fonts
 AddPackage xorg-mkfontscale # Create an index of scalable font files for X
-AddPackage xorg-server # Xorg X server
 AddPackage xorg-server-xephyr # A nested X server that runs as an X application
+AddPackage xorg-server # Xorg X server
 AddPackage xorg-xdpyinfo # Display information utility for X
 AddPackage xorg-xdriinfo # Query configuration information of DRI drivers
 AddPackage xreader # Document viewer for files like PDF and Postscript
@@ -201,8 +201,8 @@ AddPackage yaml-language-server # YAML Language Server
 AddPackage yazi # Blazing fast terminal file manager written in Rust, based on async I/O
 AddPackage zam-plugins-lv2 # Collection of audio plugins for high-quality processing - LV2 plugins
 AddPackage zed # A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
-AddPackage zsh # A very advanced and programmable command interpreter (shell) for UNIX
 AddPackage zsh-autosuggestions # Fish-like autosuggestions for zsh
+AddPackage zsh # A very advanced and programmable command interpreter (shell) for UNIX
 AddPackage zsh-completions # Additional completion definitions for Zsh
 AddPackage zsh-history-substring-search # ZSH port of Fish history search (up arrow)
 AddPackage zsh-syntax-highlighting # Fish shell like syntax highlighting for Zsh
