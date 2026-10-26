@@ -1,0 +1,8 @@
+#!/bin/sh
+# External HDMI is wired to the NVIDIA GPU, which is only a PRIME output sink
+# of the Intel (modesetting) screen. X doesn't enable sink outputs on startup,
+# so the greeter must turn them on explicitly.
+xrandr --setprovideroutputsource NVIDIA-G0 modesetting
+xrandr --auto
+xrandr --output HDMI-1-0 --primary --output eDP-1 --left-of HDMI-1-0
+exit 0

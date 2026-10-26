@@ -54,6 +54,12 @@ etc_white_list=(
 )
 IgnorePathsExcept /etc "${etc_white_list[@]}"
 
+usr_white_list=(
+    'share/lib/lightdm/lightdm-greeter-session'
+    'share/lib/lightdm/display-setup'
+)
+IgnorePathsExcept /usr "${usr_white_list[@]}"
+
 home_white_list=(
     '.bashrc'
     '.bash_profile'

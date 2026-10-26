@@ -24,7 +24,6 @@ function IgnoreAllPackages() {
 
 IgnorePath '/boot/*'
 IgnorePath '/var/*'
-IgnorePath '/usr/*'
 IgnorePath '/opt/*'
 IgnorePath '/srv/*'
 IgnorePath '/etc/ssl/*'
