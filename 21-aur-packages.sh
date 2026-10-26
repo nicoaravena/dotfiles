@@ -44,6 +44,7 @@ packages=(
     'mintlocale' # Language and locale selection tool
     'paru' # Feature packed AUR helper
     'pix' # Image viewer and browser based on gthumb. X-Apps Project.
+    'plymouth-theme-colorful-loop-git' # The plymouth theme collection by adi1090x
     'proton-drive-cli-bin' # Official Proton Drive command-line client (precompiled binary)
     'proton-pass-bin' # Open-source password manager for effortless protection. Securely store, share and auto-login your accounts with Proton Pass, using end-to-end encryption trusted by millions.
     'vesktop' # A standalone Electron-based Discord app with Vencord & improved Linux support
