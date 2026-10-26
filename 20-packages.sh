@@ -46,6 +46,9 @@ AddPackage faad2 # Freeware Advanced Audio (AAC) Decoder
 AddPackage fastfetch # A feature-rich and performance oriented neofetch like system information tool
 AddPackage fd # Simple, fast and user-friendly alternative to find
 AddPackage firefox-developer-edition # Fast, Private & Safe Web Browser (Developer Edition)
+AddPackage flatpak # Linux application sandboxing and distribution framework (formerly xdg-app)
+AddPackage flatpak-xdg-utils # Utilities for containerized apps to launch programs outside the container
+AddPackage flatseal # A permissions manager for Flatpak
 AddPackage flowblade # Multitrack non-linear video editor
 AddPackage fuse2 # Interface for userspace programs to export a filesystem to the Linux kernel
 AddPackage fwupd # Simple daemon to allow session software to update firmware
@@ -177,6 +180,7 @@ AddPackage vim # Vi Improved, a highly configurable, improved version of the vi 
 AddPackage virt-manager # Desktop user interface for managing virtual machines
 AddPackage vkd3d # Direct3D 12 to Vulkan translation library By WineHQ
 AddPackage vulkan-tools # Vulkan tools and utilities
+AddPackage warehouse # Versatile toolbox for viewing Flatpak info, managing user data, and batch managing installed Flatpaks
 AddPackage warpinator # LAN file sender, send and receive files across the network
 AddPackage wine # A compatibility layer for running Windows programs
 AddPackage wine-gecko # Wine's built-in replacement for Microsoft's Internet Explorer
