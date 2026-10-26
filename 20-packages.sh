@@ -16,6 +16,7 @@ AddPackage bluez-utils # Development and debugging utilities for the bluetooth p
 AddPackage bolt # Thunderbolt 3 device manager
 AddPackage btop # A monitor of system resources, bpytop ported to C++
 AddPackage btrfs-progs # Btrfs filesystem utilities
+AddPackage bulky # Utility to rename files and directories
 AddPackage cairo-dock # Light eye-candy fully themable animated dock
 AddPackage cairo-dock-plug-ins # Plugins for Cairo-Dock
 AddPackage calf # LV2 plug-in suite
@@ -161,6 +162,7 @@ AddPackage steam # Valve's digital software delivery system
 AddPackage strace # A diagnostic, debugging and instructional userspace tracer
 AddPackage system-config-printer # A CUPS printer configuration tool and status applet
 AddPackage tailscale # A mesh VPN that makes it easy to connect your devices, wherever they are.
+AddPackage thingy # Application to quickly access recent and favorite documents
 AddPackage tldr # Command line client for tldr, a collection of simplified man pages.
 AddPackage tlp # Linux Advanced Power Management
 AddPackage tlp-pd # Linux Advanced Power Management - Power Profiles Daemon
@@ -204,6 +206,7 @@ AddPackage xorg-server # Xorg X server
 AddPackage xorg-xdpyinfo # Display information utility for X
 AddPackage xorg-xdriinfo # Query configuration information of DRI drivers
 AddPackage xreader # Document viewer for files like PDF and Postscript
+AddPackage xviewer-plugins # Plugins for Xviewer
 AddPackage yaml-language-server # YAML Language Server
 AddPackage yazi # Blazing fast terminal file manager written in Rust, based on async I/O
 AddPackage zam-plugins-lv2 # Collection of audio plugins for high-quality processing - LV2 plugins
