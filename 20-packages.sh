@@ -90,6 +90,9 @@ AddPackage libgsf # Extensible I/O abstraction library for dealing with structur
 AddPackage libgxps # XPS Documents library
 AddPackage libnautilus-extension # Extension interface for Nautilus
 AddPackage libpulse # A featureful, general-purpose sound server (client library)
+AddPackage libreoffice-extension-texmaths # A LaTeX equation editor for LibreOffice
+AddPackage libreoffice-fresh-es # Spanish language pack for LibreOffice Fresh
+AddPackage libreoffice-fresh # LibreOffice branch which contains new features and program enhancements
 AddPackage libsmbios # A library for providing access to as much BIOS information as possible
 AddPackage libva-nvidia-driver # VA-API implementation that uses NVDEC as a backend
 AddPackage lightdm # A lightweight display manager
