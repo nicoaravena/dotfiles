@@ -1,5 +1,6 @@
 CopyFile /etc/NetworkManager/conf.d/dhcp-send-hostname.conf
 CopyFile /etc/NetworkManager/conf.d/powersave.conf
+CopyFile /etc/nftables.conf
 CopyFile /etc/X11/xorg.conf.d/00-keyboard.conf
 CopyFile /etc/X11/xorg.conf.d/30-screen.conf
 CopyFile /etc/X11/xorg.conf.d/31-ignore-monitor.conf

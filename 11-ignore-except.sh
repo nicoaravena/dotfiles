@@ -44,6 +44,7 @@ etc_white_list=(
     'mkinitcpio.conf.d/*'
     'modprobe.d/*'
     'NetworkManager/conf.d/*'
+    'nftables.conf'
     'resolv.conf'
     'systemd/logind.conf.d/*'
     'systemd/resolved.conf.d/*'
