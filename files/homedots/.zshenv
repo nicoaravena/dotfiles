@@ -15,6 +15,8 @@ export BROWSER='firefox-developer-edition'
 export EDITOR='helix'
 export GAMEMODERUNEXEC="env MANGOHUD=1"
 
+export SYSTEMD_LESS=FRXMK
+
 # load cargo env
 if [[ -f $(which cargo) ]] && [[ -f "$HOME/.cargo/env" ]]; then
   source "$HOME/.cargo/env"

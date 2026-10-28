@@ -1,8 +1,8 @@
 #------------------------------
 # OMZ
 #------------------------------
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="agnoster"
+export ZSH=~/.oh-my-zsh
+ZSH_THEME='agnoster'
 zstyle ':omz:update' frequency 13
 DISABLE_MAGIC_FUNCTIONS="true"
 COMPLETION_WAITING_DOTS="true"
@@ -32,7 +32,7 @@ if test -n "$KITTY_INSTALLATION_DIR"; then
 fi
 
 # custom aliases
-if [[ -f $(which fastfetch) ]] && [[ -f "$HOME/.config/fastfetch/salute.jsonc" ]]; then
+if [[ -f $(which fastfetch) ]] && [[ -f ~/.config/fastfetch/salute.jsonc ]]; then
     alias ff-salute=fastfetch -c ~/.config/fastfetch/salute.jsonc
 fi
 

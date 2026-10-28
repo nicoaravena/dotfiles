@@ -69,5 +69,8 @@
     "git.detectWorktrees": true,
     "debug.breakpointsView.presentation": "tree",
     "search.defaultViewMode": "tree",
-    "scm.defaultViewMode": "tree"
+    "scm.defaultViewMode": "tree",
+    "files.associations": {
+        "*.service": "properties"
+    }
 }
