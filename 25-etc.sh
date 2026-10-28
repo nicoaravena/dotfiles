@@ -1,4 +1,3 @@
-CopyFile /etc/gamemode.ini
 CopyFile /etc/NetworkManager/conf.d/00-default.conf
 CopyFile /etc/NetworkManager/conf.d/dhcp-send-hostname.conf
 CopyFile /etc/NetworkManager/conf.d/new-mac-on-boot.conf

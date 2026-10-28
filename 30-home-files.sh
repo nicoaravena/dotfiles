@@ -73,6 +73,7 @@ CopyFileTo /homedots/.config/cinnamon/spices/workspace-switcher@cinnamon.org/20.
 CopyFileTo /homedots/.config/fastfetch/all_defaults.jsonc $HOME/.config/fastfetch/all_defaults.jsonc '' $USER $USER
 CopyFileTo /homedots/.config/fastfetch/config.jsonc $HOME/.config/fastfetch/config.jsonc '' $USER $USER
 CopyFileTo /homedots/.config/fastfetch/salute.jsonc $HOME/.config/fastfetch/salute.jsonc '' $USER $USER
+CopyFileTo /homedots/.config/gamemode.ini $HOME/.config/gamemode.ini '' $USER $USER
 CopyFileTo /homedots/.config/kitty/font.conf $HOME/.config/kitty/font.conf '' $USER $USER
 CopyFileTo /homedots/.config/kitty/keymap.conf $HOME/.config/kitty/keymap.conf '' $USER $USER
 CopyFileTo /homedots/.config/kitty/kitty.conf $HOME/.config/kitty/kitty.conf '' $USER $USER
