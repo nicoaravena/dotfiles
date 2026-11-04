@@ -34,13 +34,12 @@ function AddAurPackage() {
 }
 
 packages=(
-    'aconfmgr-git' # A configuration manager for Arch Linux
     'audiveris' # Music score OMR engine
     'cinnamon-sounds' # Cinnamon desktop sounds extracted from Linuxmint (mint-artwork)
     'clockenstein' # Calendar application with local, Google and CalDAV support
     'dell-command-configure' # Configure various BIOS features on Dell laptops
-    'gtk-engine-murrine' # GTK2 engine to make your desktop look like a 'murrina', an italian word meaning the art glass works done by Venicians glass blowers.
     'lightdm-settings' # A configuration tool for the LightDM display manager
+    'lmstudio-bin' # LM Studio - A desktop app for exploring and running large language models locally
     'mint-themes' # A collection of Mint themes.
     'mintlocale' # Language and locale selection tool
     'paru' # Feature packed AUR helper
@@ -48,6 +47,7 @@ packages=(
     'plymouth-theme-colorful-loop-git' # The plymouth theme collection by adi1090x
     'proton-drive-cli-bin' # Official Proton Drive command-line client (precompiled binary)
     'proton-pass-bin' # Open-source password manager for effortless protection. Securely store, share and auto-login your accounts with Proton Pass, using end-to-end encryption trusted by millions.
+    'rustdesk-bin' # Yet another remote desktop software, written in Rust. Works out of the box, no configuration required.
     'vesktop' # A standalone Electron-based Discord app with Vencord & improved Linux support
     'vscodium-bin' # Binary releases of VS Code without MS branding/telemetry/licensing.
     'xepub' # Secure, comfortable, paginated EPUB reader
