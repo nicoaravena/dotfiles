@@ -3,7 +3,7 @@ path=($HOME/.local/bin $path)
 export PATH
 export DEFAULT_USER=nicolas
 
-export ACONFMGR_CONFIG=$HOME/dev/gitlab/nicoaravena/dotfiles
+export ACONFMGR_CONFIG=$HOME/dev/nicoaravena/dotfiles
 
 export XDEBUG_CONFIG="idekey=VSCODE"
 export MANPATH="/usr/local/man:$MANPATH"

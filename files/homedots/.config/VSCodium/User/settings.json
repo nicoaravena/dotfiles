@@ -72,5 +72,6 @@
     "scm.defaultViewMode": "tree",
     "files.associations": {
         "*.service": "properties"
-    }
+    },
+    "python.languageServer": "None"
 }
