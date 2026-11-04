@@ -78,12 +78,13 @@ AddPackage hwdetect # Hardware detection script with loading modules and mkinitc
 AddPackage hwinfo # Hardware detection tool from openSUSE
 AddPackage hypnotix # IPTV streaming application with support for live TV, movies and series
 AddPackage inkscape # Professional vector graphics editor
+AddPackage inotify-tools # a C library and a set of command-line programs for Linux providing a simple interface to inotify.
 AddPackage intel-ucode # Microcode update files for Intel CPUs
 AddPackage inxi # Full featured CLI system information tool
 AddPackage kitty # A modern, hackable, featureful, OpenGL-based terminal emulator
-AddPackage lact # Linux GPU Configuration Tool
 AddPackage less # A terminal based program for viewing text files
 AddPackage lib32-gamemode # A daemon/lib combo that allows games to request a set of optimisations be temporarily applied to the host OS
+AddPackage lib32-libdisplay-info # EDID and DisplayID library - 32-bit
 AddPackage lib32-nvidia-utils # NVIDIA drivers utilities (32-bit)
 AddPackage lib32-opencl-nvidia # OpenCL implemention for NVIDIA (32-bit)
 AddPackage lib32-vkd3d # Direct3D 12 to Vulkan translation library By WineHQ
@@ -162,6 +163,8 @@ AddPackage steam # Valve's digital software delivery system
 AddPackage strace # A diagnostic, debugging and instructional userspace tracer
 AddPackage system-config-printer # A CUPS printer configuration tool and status applet
 AddPackage tailscale # A mesh VPN that makes it easy to connect your devices, wherever they are.
+AddPackage tesseract-data-eng # Tesseract OCR data (eng)
+AddPackage tesseract-data-lat # Tesseract OCR data (lat)
 AddPackage thingy # Application to quickly access recent and favorite documents
 AddPackage tldr # Command line client for tldr, a collection of simplified man pages.
 AddPackage tlp # Linux Advanced Power Management
@@ -191,6 +194,7 @@ AddPackage wine # A compatibility layer for running Windows programs
 AddPackage wine-gecko # Wine's built-in replacement for Microsoft's Internet Explorer
 AddPackage wine-mono # Wine's built-in replacement for Microsoft's .NET Framework
 AddPackage winetricks # Script to install various redistributable runtime libraries in Wine.
+AddPackage wireless-regdb # Central Regulatory Domain Database
 AddPackage wireless_tools # Tools allowing to manipulate the Wireless Extensions
 AddPackage wireplumber # Session / policy manager implementation for PipeWire
 AddPackage wpa_supplicant # A utility providing key negotiation for WPA wireless networks
@@ -205,6 +209,7 @@ AddPackage xorg-server-xephyr # A nested X server that runs as an X application
 AddPackage xorg-server # Xorg X server
 AddPackage xorg-xdpyinfo # Display information utility for X
 AddPackage xorg-xdriinfo # Query configuration information of DRI drivers
+AddPackage xorg-xinput # Small commandline tool to configure devices
 AddPackage xreader # Document viewer for files like PDF and Postscript
 AddPackage xviewer-plugins # Plugins for Xviewer
 AddPackage yaml-language-server # YAML Language Server
