@@ -13,8 +13,6 @@ CreateFile $HOME/.config/vesktop/settings/quickCss.css '' $USER $USER > /dev/nul
 CopyFileTo /homedots/.agents/AGENTS.md $HOME/.agents/AGENTS.md '' $USER $USER
 CopyFileTo /homedots/.bash_aliases $HOME/.bash_aliases '' $USER $USER
 CopyFileTo /homedots/.bash_profile $HOME/.bash_profile '' $USER $USER
-CopyFileTo /homedots/.bash_profile $HOME/.bash_profile '' $USER $USER
-CopyFileTo /homedots/.bashrc $HOME/.bashrc '' $USER $USER
 CopyFileTo /homedots/.bashrc $HOME/.bashrc '' $USER $USER
 CopyFileTo /homedots/.claude/settings.json $HOME/.claude/settings.json '' $USER $USER
 CopyFileTo /homedots/.config/autostart/cairo-dock.desktop $HOME/.config/autostart/cairo-dock.desktop '' $USER $USER
