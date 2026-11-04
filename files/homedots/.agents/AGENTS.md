@@ -46,7 +46,7 @@ otherwise derive them from the repository itself and state what you assumed.
 - **Stack** - read the dependency manifest (`pyproject.toml`, `package.json`, `go.mod`, `Cargo.toml`, `pom.xml`, ...) and the lockfile. Use the libraries and versions already there. Propose new dependencies; don't add them silently.
 - **Architecture style** - identify the layering in the tree before adding to it. A reasonable default when none is evident: delivery (CLI / HTTP / UI) -> application services (use cases) -> domain (entities, value objects) -> adapters (filesystem, HTTP, DB, subprocess).
 - **Current vs target structure** - a scaffolded directory is not a contract. Distinguish what exists today from what is aspirational, and place new code per the target.
-- **Specs location** - `SPEC.md`, `ROADMAP.md`, `TASKS.md` at the repo root, or `docs/`.
+- **Specs location** - `SPEC.md`, `ROADMAP.md`, `TASKS.md` at the repo `docs/` or root if they already exists.
 
 ## Command Execution
 
@@ -108,6 +108,7 @@ Repo-specific traps belong in that repo's `AGENTS.md`. These recur everywhere:
 - **Referenced-but-missing scripts** - CI comments and READMEs go stale. Verify a script exists before relying on it; otherwise run the underlying commands directly.
 - **Files are auto-formatted after every write** - a `PostToolUse` hook runs `uvx ruff format` (`.py`), `gofmt -w` (`.go`), `rustfmt` (`.rs`) on each Write/Edit. Disk content can differ from what you wrote. Don't re-format by hand, and don't treat the resulting diff as someone else's change.
 - **Git forges** - `glab` for GitLab (`~/dev/gitlab/`). `gh` is *not installed* on this machine: for `~/dev/github/` use plain `git` plus the web UI, or install `gh` first - don't assume it's there. `~/dev/codeberg/` is Forgejo, where neither CLI applies; plain `git` only.
+- **Git commits** - Agent is a helper tool, not a Co-Author. The engineer **MUST** be the only one who signs the commit. No commits are made without approval.
 
 ## Definition of Done
 
