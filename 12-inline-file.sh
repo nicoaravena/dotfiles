@@ -15,7 +15,7 @@ if [[ $aconfmgr_action == 'apply' ]]; then
         git config --global user.email ${git_email}
     fi
     if [[ -f $HOME/.config/nvim/init.lua ]]; then
-      RemoveFile $HOME/.config/nvim/init.lua
+      rm $HOME/.config/nvim/init.lua
     fi
     CreateDir $HOME/.config/nvim '' $USER $USER
     echo 'require("config.lazy")' > $HOME/.config/nvim/init.lua
