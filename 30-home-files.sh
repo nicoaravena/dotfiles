@@ -104,6 +104,7 @@ CopyFileTo /homedots/.config/opencode/opencode.jsonc $HOME/.config/opencode/open
 CopyFileTo /homedots/.config/opencode/cli.json $HOME/.config/opencode/cli.json '' $USER $USER
 CopyFileTo /homedots/.config/protonfixes/config.ini $HOME/.config/protonfixes/config.ini '' $USER $USER
 CopyFileTo /homedots/.config/Proton/VPN/settings.json $HOME/.config/Proton/VPN/settings.json '' $USER $USER
+CopyFileTo /homedots/.config/systemd/user/csd-power-watch.service $HOME/.config/systemd/user/csd-power-watch.service '' $USER $USER
 CopyFileTo /homedots/.config/vesktop/settings.json $HOME/.config/vesktop/settings.json '' $USER $USER
 CopyFileTo /homedots/.config/vesktop/settings/settings.json $HOME/.config/vesktop/settings/settings.json '' $USER $USER
 CopyFileTo /homedots/.config/vesktop/themes/mocha-default.theme.css $HOME/.config/vesktop/themes/mocha-default.theme.css '' $USER $USER
@@ -121,6 +122,7 @@ CopyFileTo /homedots/.editorconfig $HOME/.editorconfig 664 $USER $USER
 CopyFileTo /homedots/.ignore $HOME/.ignore '' $USER $USER
 CopyFileTo /homedots/.lmstudio/config-presets/custom\ sloth\ qwen3\ coder.preset.json $HOME/.lmstudio/config-presets/custom\ sloth\ qwen3\ coder.preset.json '' $USER $USER
 CopyFileTo /homedots/.lmstudio/settings.json $HOME/.lmstudio/settings.json '' $USER $USER
+CopyFileTo /homedots/.local/bin/csd-power-watch $HOME/.local/bin/csd-power-watch 755 $USER $USER
 CopyFileTo /homedots/.nv/nvidia-application-profiles-rc $HOME/.nv/nvidia-application-profiles-rc '' $USER $USER
 CopyFileTo /homedots/.pam_environment $HOME/.pam_environment '' $USER $USER
 CopyFileTo /homedots/.xprofile $HOME/.xprofile '' $USER $USER

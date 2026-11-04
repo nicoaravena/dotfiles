@@ -1,0 +1,90 @@
+#!/usr/bin/env bash
+# Watch cinnamon-settings-daemon's power plugin (csd-power) for brightness freezes.
+#
+# csd-power can stop answering its Screen D-Bus methods while staying alive,
+# which silently breaks the Fn brightness keys. Every interval this probes
+# Screen.GetPercentage with a short timeout and logs a timeline of the context
+# (lid, AC, screensaver, raw backlight, csd-power pid) whenever it changes, so
+# the event that precedes a freeze can be identified afterwards.
+#
+# Output goes to stdout (journald when run as the systemd user unit):
+#   journalctl --user -u csd-power-watch
+#
+# Env: CSD_WATCH_INTERVAL  seconds between probes (default 10)
+
+set -u
+
+interval="${CSD_WATCH_INTERVAL:-10}"
+probe_timeout=2
+
+log() { printf '%s %s\n' "$(date '+%F %T')" "$*"; }
+
+read_first() { # print the first line of the first readable file, or "?"
+    local f
+    for f in "$@"; do
+        [[ -r $f ]] && { head -n1 "$f"; return; }
+    done
+    echo '?'
+}
+
+probe_screen() { # prints the brightness percentage; non-zero exit on timeout/error
+    timeout $((probe_timeout + 2)) gdbus call --session --timeout "$probe_timeout" \
+        --dest org.cinnamon.SettingsDaemon.Power \
+        --object-path /org/cinnamon/SettingsDaemon/Power \
+        --method org.cinnamon.SettingsDaemon.Power.Screen.GetPercentage 2>/dev/null |
+        sed -nE 's/^\(uint32 ([0-9]+),\)$/\1/p'
+    return "${PIPESTATUS[0]}"
+}
+
+screensaver_active() {
+    local out
+    out=$(timeout 3 gdbus call --session --timeout 2 \
+        --dest org.cinnamon.ScreenSaver --object-path /org/cinnamon/ScreenSaver \
+        --method org.cinnamon.ScreenSaver.GetActive 2>/dev/null) || { echo '?'; return; }
+    [[ $out == *true* ]] && echo yes || echo no
+}
+
+dump_threads() { # kernel wait channel per thread, to see where csd-power is blocked
+    local pid=$1 t
+    [[ -d /proc/$pid ]] || return
+    for t in /proc/"$pid"/task/*; do
+        log "  thread $(<"$t"/comm) wchan=$(<"$t"/wchan)"
+    done
+}
+
+prev_state=''
+prev_ok=1
+last_ok='never'
+
+log "started (interval ${interval}s, probe timeout ${probe_timeout}s)"
+
+while :; do
+    pid=$(pgrep -xo csd-power || echo none)
+    lid=$(read_first /proc/acpi/button/lid/*/state | awk '{print $2}')
+    ac=$(read_first /sys/class/power_supply/A{C,DP}*/online)
+    saver=$(screensaver_active)
+    raw=$(read_first /sys/class/backlight/*/brightness)
+
+    if pct=$(probe_screen) && [[ -n $pct ]]; then
+        ok=1
+        last_ok=$(date '+%T')
+        probe="ok(${pct}%)"
+    else
+        ok=0
+        probe='NO-REPLY'
+    fi
+
+    state="probe=$probe pid=$pid lid=$lid ac=$ac saver=$saver raw=$raw"
+    [[ $state != "$prev_state" ]] && log "$state"
+
+    if ((prev_ok && !ok)); then
+        log "FREEZE: csd-power stopped answering Screen.GetPercentage (last ok $last_ok)"
+        [[ $pid != none ]] && dump_threads "$pid"
+    elif ((!prev_ok && ok)); then
+        log "RECOVERED: csd-power answering again"
+    fi
+
+    prev_state=$state
+    prev_ok=$ok
+    sleep "$interval"
+done
