@@ -11,6 +11,7 @@ AddPackage bind # A complete, highly portable implementation of the DNS protocol
 AddPackage bleachbit # Deletes unneeded files to free disk space and maintain privacy
 AddPackage blender # A fully integrated 3D graphics creation suite
 AddPackage blueman # GTK+ Bluetooth Manager
+AddPackage bluetui # TUI for managing bluetooth devices
 AddPackage bluez-hid2hci # Put HID proxying bluetooth HCI's into HCI mode
 AddPackage bluez-utils # Development and debugging utilities for the bluetooth protocol stack
 AddPackage bolt # Thunderbolt 3 device manager
@@ -32,6 +33,7 @@ AddPackage dbeaver # Free universal SQL Client for developers and database admin
 AddPackage dconf-editor # GSettings editor for GNOME
 AddPackage deluge-gtk # GTK UI for Deluge
 AddPackage devhelp # API documentation browser for GNOME
+AddPackage dialog # A tool to display dialog boxes from shell scripts
 AddPackage distrobox # Use any linux distribution inside your terminal.
 AddPackage dkms # Dynamic Kernel Modules System
 AddPackage dnsmasq # Lightweight, easy to configure DNS forwarder and DHCP server
@@ -42,6 +44,7 @@ AddPackage d-spy # D-Bus debugger for GNOME
 AddPackage duf # Disk Usage/Free Utility
 AddPackage easyeffects # Audio Effects for Pipewire applications
 AddPackage efibootmgr # Linux user-space application to modify the EFI Boot Manager
+AddPackage evtest # Input device event monitor and query tool
 AddPackage eza # A modern replacement for ls (community fork of exa)
 AddPackage faad2 # Freeware Advanced Audio (AAC) Decoder
 AddPackage fastfetch # A feature-rich and performance oriented neofetch like system information tool
@@ -104,6 +107,7 @@ AddPackage linux-firmware-nvidia # Firmware files for Linux - Firmware for NVIDI
 AddPackage linux-firmware-realtek # Firmware files for Linux - Firmware for Realtek devices
 AddPackage linux-lts-headers # Headers and scripts for building modules for the LTS Linux kernel
 AddPackage lldb # Next generation, high-performance debugger
+AddPackage lostfiles # Find orphaned files not owned by any Arch packages
 AddPackage lsp-plugins-lv2 # Collection of open-source plugins - LV2
 AddPackage man-db # A utility for reading man pages
 AddPackage mangohud # A Vulkan overlay layer for monitoring FPS, temperatures, CPU/GPU load and more.
@@ -163,8 +167,13 @@ AddPackage steam # Valve's digital software delivery system
 AddPackage strace # A diagnostic, debugging and instructional userspace tracer
 AddPackage system-config-printer # A CUPS printer configuration tool and status applet
 AddPackage tailscale # A mesh VPN that makes it easy to connect your devices, wherever they are.
+AddPackage tenacity # An easy-to-use multi-track audio editor and recorder, forked from Audacity
 AddPackage tesseract-data-eng # Tesseract OCR data (eng)
 AddPackage tesseract-data-lat # Tesseract OCR data (lat)
+AddPackage texlive-fontsrecommended # TeX Live - Recommended fonts
+AddPackage texlive-latexextra # TeX Live - LaTeX additional packages
+AddPackage texlive-luatex # TeX Live - LuaTeX packages
+AddPackage texlive-xetex # TeX Live - XeTeX and packages
 AddPackage thingy # Application to quickly access recent and favorite documents
 AddPackage tldr # Command line client for tldr, a collection of simplified man pages.
 AddPackage tlp # Linux Advanced Power Management
@@ -179,6 +188,7 @@ AddPackage ttf-cascadia-code-nerd # Patched font Cascadia Code (Caskaydia) from 
 AddPackage ttf-dejavu # Font family based on the Bitstream Vera Fonts with a wider range of characters
 AddPackage ttf-fira-code # Monospaced font with programming ligatures
 AddPackage ty # Extremely fast Python type checker and language server, written in Rust
+AddPackage ufw # Uncomplicated and easy to use CLI tool for managing a netfilter firewall
 AddPackage umu-launcher # The Unified Launcher for Windows Games on Linux, to run Proton with fixes outside of Steam
 AddPackage unrar # The RAR uncompression program
 AddPackage uv # An extremely fast Python package installer and resolver written in Rust
@@ -214,6 +224,7 @@ AddPackage xreader # Document viewer for files like PDF and Postscript
 AddPackage xviewer-plugins # Plugins for Xviewer
 AddPackage yaml-language-server # YAML Language Server
 AddPackage yazi # Blazing fast terminal file manager written in Rust, based on async I/O
+AddPackage yt-dlp # A youtube-dl fork with additional features and fixes
 AddPackage zam-plugins-lv2 # Collection of audio plugins for high-quality processing - LV2 plugins
 AddPackage zed # A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 AddPackage zsh-autosuggestions # Fish-like autosuggestions for zsh
