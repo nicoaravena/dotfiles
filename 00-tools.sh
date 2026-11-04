@@ -8,7 +8,7 @@ get_script_dir()
   # Resolve symlinks recursively
   while [ -L "$SOURCE_PATH" ]; do
     # Get symlink directory
-    SYMLINK_DIR="$( cd -P "$( dirname "$SOURCE_PATH" )" >/dev/null 2>&1 && pwd )"
+    SYMLINK_DIR="$( cd -P "$( dirname "$SOURCE_PATH" )" > /dev/null 2>&1 && pwd )"
     # Resolve symlink target (relative or absolute)
     SOURCE_PATH="$(readlink "$SOURCE_PATH")"
     # Check if candidate path is relative or absolute
@@ -18,7 +18,7 @@ get_script_dir()
     fi
   done
   # Get final script directory path from fully resolved source path
-  SCRIPT_DIR="$(cd -P "$( dirname "$SOURCE_PATH" )" >/dev/null 2>&1 && pwd)"
+  SCRIPT_DIR="$( cd -P "$( dirname "$SOURCE_PATH" )" > /dev/null 2>&1 && pwd )"
   echo "$SCRIPT_DIR"
 }
 
