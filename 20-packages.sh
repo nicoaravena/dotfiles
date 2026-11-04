@@ -156,6 +156,7 @@ AddPackage python-pynvim # Python client for Neovim
 AddPackage qemu-desktop # A QEMU setup for desktop environments
 AddPackage rainfrog # A database management TUI for Postgres
 AddPackage resources # Monitor for system resources and processes
+AddPackage ripgrep # A search tool that combines the usability of ag with the raw speed of grep
 AddPackage ruff # An extremely fast Python linter, written in Rust
 AddPackage sassc # C implementation of Sass CSS preprocessor
 AddPackage shfmt # Format shell programs
