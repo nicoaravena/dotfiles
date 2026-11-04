@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+installed=$(pacman -Qi aconfmgr-git > /dev/null 2>&1 && echo 1)
+
+if [[ -z $installed ]]; then
+  echo 'Installing aconfmgr-git from aur'
+  sudo pacman -S --needed base-devel
+  git clone https://aur.archlinux.org/aconfmgr-git.git /tmp/aconfmgr
+  cd /tmp/aconfmgr
+  makepkg -si
+else
+  echo 'aconfmgr-git is already installed'
+fi
