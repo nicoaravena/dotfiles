@@ -58,3 +58,58 @@ Each file is copied from `files/homedots/` to the same relative path in `$HOME`.
 | `.claude/CLAUDE.md` | `.agents/AGENTS.md` | Claude Code\* |
 | `.config/opencode/AGENTS.md` | `.agents/AGENTS.md` | `opencode` |
 | `.config/systemd/user/graphical-session.target.wants/csd-power-watch.service` | `.config/systemd/user/csd-power-watch.service` | `systemd`\* (enables the user service at login) |
+
+## /etc files
+
+[`25-etc.sh`](25-etc.sh) installs these files in `/etc`.
+
+### Copied files
+
+Each file is copied from `files/etc/` to the same relative path in `/etc`.
+
+| File | Used by |
+| --- | --- |
+| `/etc/default/earlyoom` | `earlyoom` |
+| `/etc/environment` | `pam` |
+| `/etc/lightdm/lightdm.conf.d/50-personal.conf` | `lightdm` |
+| `/etc/lightdm/slick-greeter.conf` | `lightdm-slick-greeter` |
+| `/etc/locale.conf` | `systemd` |
+| `/etc/locale.gen` | `glibc` |
+| `/etc/mkinitcpio.conf.d/custom.conf` | `mkinitcpio` |
+| `/etc/modprobe.d/custom-nvidia.conf` | `nvidia-open-lts` |
+| `/etc/NetworkManager/conf.d/00-default.conf`, `/etc/NetworkManager/conf.d/dhcp-send-hostname.conf`, `/etc/NetworkManager/conf.d/new-mac-on-boot.conf`, `/etc/NetworkManager/conf.d/powersave.conf` | `networkmanager` |
+| `/etc/nftables.conf` | `nftables` |
+| `/etc/systemd/logind.conf.d/custom.conf` | `systemd` |
+| `/etc/systemd/resolved.conf.d/quad9.conf` | `systemd` |
+| `/etc/systemd/system/blueman-mechanism.service` | `blueman` |
+| `/etc/systemd/system/bluetooth.service` | `bluez` |
+| `/etc/systemd/system/nvidia-lock-clocks.service` | `nvidia-utils` (runs `nvidia-smi`) |
+| `/etc/systemd/system/rc-local.service` | `systemd` |
+| `/etc/systemd/timesyncd.conf.d/cl.conf` | `systemd` |
+| `/etc/tlp.d/10-custom.conf` | `tlp` |
+| `/etc/vconsole.conf` | `systemd` |
+| `/etc/X11/xorg.conf.d/00-keyboard.conf`, `/etc/X11/xorg.conf.d/30-screen.conf`, `/etc/X11/xorg.conf.d/31-ignore-monitor.conf`, `/etc/X11/xorg.conf.d/35-disable-autoadd-devices.conf` | `xorg-server` |
+
+### Symlinks
+
+Links to `/dev/null` mask the unit, so it can't be started.
+
+| Link | Target | Used by |
+| --- | --- | --- |
+| `/etc/resolv.conf` | `../run/systemd/resolve/stub-resolv.conf` | `systemd` |
+| `/etc/systemd/system/multi-user.target.wants/nvidia-lock-clocks.service` | `/etc/systemd/system/nvidia-lock-clocks.service` | `nvidia-utils` |
+| `/etc/systemd/system/systemd-networkd.service`, `/etc/systemd/system/systemd-networkd.socket`, `/etc/systemd/system/systemd-networkd-varlink.socket`, `/etc/systemd/system/systemd-networkd-resolve-hook.socket`, `/etc/systemd/system/systemd-networkd-varlink-metrics.socket` | `/dev/null` | `systemd` |
+| `/etc/systemd/system/systemd-rfkill.service`, `/etc/systemd/system/systemd-rfkill.socket` | `/dev/null` | `systemd` |
+
+## /usr files
+
+[`25-usr.sh`](25-usr.sh) installs these files in `/usr`.
+
+### Copied files
+
+Each file is copied from `files/usr/` to the same relative path in `/usr`, with mode `755`.
+
+| File | Used by |
+| --- | --- |
+| `/usr/share/lib/lightdm/display-setup` | `lightdm` (`display-setup-script` in `50-personal.conf`) |
+| `/usr/share/lib/lightdm/lightdm-greeter-session` | `lightdm` (`greeter-wrapper` in `50-personal.conf`) |
