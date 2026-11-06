@@ -125,6 +125,7 @@ AddPackage net-tools # Configuration tools for Linux networking
 AddPackage nmap # Utility for network discovery and security auditing
 AddPackage noto-fonts # Google Noto TTF fonts
 AddPackage numlockx # Turns on the numlock key in X11.
+AddPackage nvidia-container-toolkit # NVIDIA container toolkit
 AddPackage nvidia-open-lts # NVIDIA open kernel modules
 AddPackage nvidia-prime # NVIDIA Prime Render Offload configuration and utilities
 AddPackage nvidia-settings # Tool for configuring the NVIDIA graphics driver
@@ -132,8 +133,6 @@ AddPackage nvm # Node Version Manager - Simple bash script to manage multiple ac
 AddPackage nvtop # GPUs process monitoring for AMD, Intel and NVIDIA
 AddPackage obs-studio # Free, open source software for live streaming and recording
 AddPackage oha # Ohayou(おはよう), HTTP load generator, inspired by rakyll/hey with tui animation
-AddPackage ollama # Create, run and share large language models (LLMs)
-AddPackage ollama-cuda # Create, run and share large language models (LLMs) with CUDA
 AddPackage opencl-nvidia # OpenCL implemention for NVIDIA
 AddPackage opencode # The open source coding agent
 AddPackage openssh # SSH protocol implementation for remote login, command execution and file transfer
