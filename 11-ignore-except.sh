@@ -84,6 +84,7 @@ home_white_list=(
     '.config/cairo-dock/themes/personal-custom/*'
     '.config/cinnamon/spices/*'
     '.config/fastfetch/*'
+    '.config/gamemode.ini'
     '.config/kitty/*'
     '.config/MangoHud/*'
     '.config/nvim/lsp/*'
