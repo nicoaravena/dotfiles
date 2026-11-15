@@ -103,7 +103,6 @@ home_white_list=(
     '.config/VSCodium/User/settings.json'
     '.config/wireplumber/wireplumber.conf.d/*'
     '.config/zed/*'
-    '.dmrc'
     '.editorconfig'
     '.ignore'
     '.lmstudio/config-presets/*'
@@ -111,7 +110,6 @@ home_white_list=(
     '.local/bin/csd-power-watch'
     '.nv/nvidia-application-profiles-rc'
     '.pam_environment'
-    '.xprofile'
     '.zshenv'
     '.zshrc'
 )

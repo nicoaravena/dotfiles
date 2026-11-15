@@ -43,7 +43,6 @@ Each file is copied from `files/homedots/` to the same relative path in `$HOME`.
 | `.config/wireplumber/wireplumber.conf.d/**` | `wireplumber` |
 | `.config/zed/keymap.json`, `.config/zed/settings.json` | `zed` |
 | `.conkyrc` | `conky` |
-| `.dmrc`, `.xprofile` | `lightdm` |
 | `.editorconfig` | `neovim`, `zed` |
 | `.ignore` | `fd`, `ripgrep` |
 | `.lmstudio/config-presets/custom sloth qwen3 coder.preset.json`, `.lmstudio/settings.json` | `lmstudio-bin` |

@@ -115,7 +115,6 @@ CopyFileTo /homedots/.config/wireplumber/wireplumber.conf.d/80-disable-logind.co
 CopyFileTo /homedots/.config/zed/keymap.json $HOME/.config/zed/keymap.json '' $USER $USER
 CopyFileTo /homedots/.config/zed/settings.json $HOME/.config/zed/settings.json 600 $USER $USER
 CopyFileTo /homedots/.conkyrc $HOME/.conkyrc '' $USER $USER
-CopyFileTo /homedots/.dmrc $HOME/.dmrc '' $USER $USER
 CopyFileTo /homedots/.editorconfig $HOME/.editorconfig 664 $USER $USER
 CopyFileTo /homedots/.ignore $HOME/.ignore '' $USER $USER
 CopyFileTo /homedots/.lmstudio/config-presets/custom\ sloth\ qwen3\ coder.preset.json $HOME/.lmstudio/config-presets/custom\ sloth\ qwen3\ coder.preset.json '' $USER $USER
@@ -123,7 +122,6 @@ CopyFileTo /homedots/.lmstudio/settings.json $HOME/.lmstudio/settings.json '' $U
 CopyFileTo /homedots/.local/bin/csd-power-watch $HOME/.local/bin/csd-power-watch 755 $USER $USER
 CopyFileTo /homedots/.nv/nvidia-application-profiles-rc $HOME/.nv/nvidia-application-profiles-rc '' $USER $USER
 CopyFileTo /homedots/.pam_environment $HOME/.pam_environment '' $USER $USER
-CopyFileTo /homedots/.xprofile $HOME/.xprofile '' $USER $USER
 CopyFileTo /homedots/.zshenv $HOME/.zshenv '' $USER $USER
 CopyFileTo /homedots/.zshrc $HOME/.zshrc '' $USER $USER
 
