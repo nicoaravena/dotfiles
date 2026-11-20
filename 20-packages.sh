@@ -2,6 +2,8 @@ AddPackage acpi_call-lts # A linux kernel module that enables calls to ACPI meth
 AddPackage acpi # Client for battery, power, and thermal readings
 AddPackage android-tools # Android platform tools
 AddPackage android-udev # Udev rules to connect Android devices to your linux box
+AddPackage apparmor # Mandatory Access Control (MAC) using Linux Security Module (LSM)
+AddPackage arch-audit # A utility like pkg-audit based on Arch Security Team data
 AddPackage atuin # Magical shell history
 AddPackage base-devel # Basic tools to build Arch Linux packages
 AddPackage base # Minimal package set to define a basic Arch Linux installation
@@ -22,9 +24,11 @@ AddPackage cairo-dock # Light eye-candy fully themable animated dock
 AddPackage cairo-dock-plug-ins # Plugins for Cairo-Dock
 AddPackage calf # LV2 plug-in suite
 AddPackage calibre # Ebook management application
+AddPackage ccache # Compiler cache that speeds up recompilation by caching previous compilations
 AddPackage celluloid # Simple media player, a GTK frontend for mpv
 AddPackage cinnamon # Desktop environment which provides advanced innovative features and a traditional user experience
 AddPackage cinnamon-translations # Translations for Cinnamon and Nemo
+AddPackage clamav # Anti-virus toolkit for Unix
 AddPackage conky # Light-weight system monitor for X, Wayland, and other things, too
 AddPackage cpio # A tool to copy files into or out of a cpio or tar archive
 AddPackage csvlens # Command line csv viewer
@@ -42,6 +46,7 @@ AddPackage docker-compose # Fast, isolated development environments using Docker
 AddPackage docker # Pack, ship and run any application as a lightweight container
 AddPackage d-spy # D-Bus debugger for GNOME
 AddPackage duf # Disk Usage/Free Utility
+AddPackage earlyoom # Early OOM Daemon for Linux
 AddPackage easyeffects # Audio Effects for Pipewire applications
 AddPackage efibootmgr # Linux user-space application to modify the EFI Boot Manager
 AddPackage evtest # Input device event monitor and query tool
@@ -56,22 +61,21 @@ AddPackage flatseal # A permissions manager for Flatpak
 AddPackage flowblade # Multitrack non-linear video editor
 AddPackage fuse2 # Interface for userspace programs to export a filesystem to the Linux kernel
 AddPackage fwupd # Simple daemon to allow session software to update firmware
-AddPackage gamemode # A daemon/lib combo that allows games to request a set of optimisations be temporarily applied to the host OS
+AddPackage fzy # A better fuzzy finder
+# AddPackage gamemode # A daemon/lib combo that allows games to request a set of optimisations be temporarily applied to the host OS
 AddPackage gamescope # SteamOS session compositing window manager
 AddPackage gdb # The GNU Debugger
 AddPackage gimp # GNU Image Manipulation Program
+AddPackage github-cli # The GitHub CLI
 AddPackage git # the fast distributed version control system
 AddPackage glab # Cli tool to help work seamlessly with GitLab from the command line
 AddPackage glim # A TUI for monitoring GitLab CI/CD pipelines and projects
-AddPackage gnome-calculator # GNOME Scientific calculator
-AddPackage gnome-disk-utility # Disk Management Utility for GNOME
 AddPackage gnome-keyring # Stores passwords and encryption keys
-AddPackage gnome-screenshot # Take pictures of your screen
-AddPackage gnome-terminal # The GNOME Terminal Emulator
-AddPackage godot # Advanced cross-platform 2D and 3D game engine
+AddPackage gopls # Language server for Go programming language
 AddPackage gparted # A Partition Magic clone, frontend to GNU Parted
 AddPackage gst-plugin-pipewire # Multimedia graph framework - pipewire plugin
 AddPackage gst-plugins-good # Multimedia graph framework - good plugins
+AddPackage gufw # Uncomplicated way to manage your Linux firewall
 AddPackage gvfs-smb # Virtual filesystem implementation for GIO - SMB/CIFS backend (Windows file sharing)
 AddPackage helix # A post-modern modal text editor
 AddPackage helvum # GTK patchbay for PipeWire
@@ -80,10 +84,13 @@ AddPackage hunspell # Spell checker and morphological analyzer library and progr
 AddPackage hwdetect # Hardware detection script with loading modules and mkinitcpio.conf
 AddPackage hwinfo # Hardware detection tool from openSUSE
 AddPackage hypnotix # IPTV streaming application with support for live TV, movies and series
+AddPackage ibus # Intelligent input bus for Linux/Unix
+AddPackage inetutils # A collection of common network programs
 AddPackage inkscape # Professional vector graphics editor
 AddPackage inotify-tools # a C library and a set of command-line programs for Linux providing a simple interface to inotify.
 AddPackage intel-ucode # Microcode update files for Intel CPUs
 AddPackage inxi # Full featured CLI system information tool
+AddPackage just # A handy way to save and run project-specific commands
 AddPackage kitty # A modern, hackable, featureful, OpenGL-based terminal emulator
 AddPackage less # A terminal based program for viewing text files
 AddPackage lib32-gamemode # A daemon/lib combo that allows games to request a set of optimisations be temporarily applied to the host OS
@@ -109,11 +116,16 @@ AddPackage linux-lts-headers # Headers and scripts for building modules for the 
 AddPackage lldb # Next generation, high-performance debugger
 AddPackage lostfiles # Find orphaned files not owned by any Arch packages
 AddPackage lsp-plugins-lv2 # Collection of open-source plugins - LV2
+AddPackage lynis # Security and system auditing tool to harden Unix/Linux systems
+AddPackage macchanger # A small utility to change your NIC's MAC address
 AddPackage man-db # A utility for reading man pages
 AddPackage mangohud # A Vulkan overlay layer for monitoring FPS, temperatures, CPU/GPU load and more.
 AddPackage mda.lv2 # A port of the MDA VST plugins to LV2
 AddPackage mdfried # A markdown viewer for the terminal that renders images and big headers
+AddPackage meld # Compare files, directories and working copies
 AddPackage mesa-utils # Essential Mesa utilities
+AddPackage mimalloc # General-purpose allocator with excellent performance characteristics
+AddPackage mold # A Modern Linker
 AddPackage musescore # Create, play and print beautiful sheet music
 #AddPackage nano # Pico editor clone with enhancements
 #AddPackage nano-syntax-highlighting # Nano editor syntax highlighting enhancements
@@ -136,7 +148,11 @@ AddPackage oha # Ohayou(おはよう), HTTP load generator, inspired by rakyll/h
 AddPackage opencl-nvidia # OpenCL implemention for NVIDIA
 AddPackage opencode # The open source coding agent
 AddPackage openssh # SSH protocol implementation for remote login, command execution and file transfer
+AddPackage oryx # A TUI for sniffing network traffic using eBPF
+AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
 AddPackage papirus-icon-theme # Papirus icon theme
+AddPackage parallel # A shell tool for executing jobs in parallel
+AddPackage patchelf # Small utility to modify the dynamic linker and RPATH of ELF executables
 AddPackage pipewire-alsa # Low-latency audio/video router and processor - ALSA configuration
 AddPackage pipewire-jack # Low-latency audio/video router and processor - JACK replacement
 AddPackage pipewire # Low-latency audio/video router and processor
@@ -154,10 +170,16 @@ AddPackage python-pipx # Install and Run Python Applications in Isolated Environ
 AddPackage python-pynvim # Python client for Neovim
 AddPackage qemu-desktop # A QEMU setup for desktop environments
 AddPackage rainfrog # A database management TUI for Postgres
+AddPackage realtime-privileges # Realtime privileges for users
 AddPackage resources # Monitor for system resources and processes
 AddPackage ripgrep # A search tool that combines the usability of ag with the raw speed of grep
+AddPackage rkhunter # Checks machines for the presence of rootkits and other unwanted tools.
+AddPackage rsync # A fast and versatile file copying tool for remote and local files
+AddPackage rtkit # Realtime Policy and Watchdog Daemon
 AddPackage ruff # An extremely fast Python linter, written in Rust
+AddPackage samurai # ninja-compatible build tool written in C
 AddPackage sassc # C implementation of Sass CSS preprocessor
+AddPackage scx-scheds # sched_ext schedulers and tools
 AddPackage shfmt # Format shell programs
 AddPackage simple-scan # Simple scanning utility
 AddPackage smartmontools # Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives
@@ -165,6 +187,7 @@ AddPackage sof-firmware # Sound Open Firmware
 AddPackage spotify-launcher # Client for spotify's apt repository in Rust for Arch Linux
 AddPackage steam # Valve's digital software delivery system
 AddPackage strace # A diagnostic, debugging and instructional userspace tracer
+AddPackage superlight # System monitor for Linux desktops
 AddPackage system-config-printer # A CUPS printer configuration tool and status applet
 AddPackage tailscale # A mesh VPN that makes it easy to connect your devices, wherever they are.
 AddPackage tenacity # An easy-to-use multi-track audio editor and recorder, forked from Audacity
@@ -174,7 +197,7 @@ AddPackage texlive-fontsrecommended # TeX Live - Recommended fonts
 AddPackage texlive-latexextra # TeX Live - LaTeX additional packages
 AddPackage texlive-luatex # TeX Live - LuaTeX packages
 AddPackage texlive-xetex # TeX Live - XeTeX and packages
-AddPackage thingy # Application to quickly access recent and favorite documents
+AddPackage tk # A windowing toolkit for use with tcl
 AddPackage tldr # Command line client for tldr, a collection of simplified man pages.
 AddPackage tlp # Linux Advanced Power Management
 AddPackage tlp-pd # Linux Advanced Power Management - Power Profiles Daemon
@@ -193,6 +216,7 @@ AddPackage umu-launcher # The Unified Launcher for Windows Games on Linux, to ru
 AddPackage unrar # The RAR uncompression program
 AddPackage uv # An extremely fast Python package installer and resolver written in Rust
 AddPackage v4l2loopback-dkms # v4l2-loopback device – module sources
+AddPackage velocitty # Terminal emulator for Linux desktops
 AddPackage vimix-cursors # An X Cursor theme inspired by Material design and based on capitaine-cursors
 AddPackage vim # Vi Improved, a highly configurable, improved version of the vi text editor
 AddPackage virt-manager # Desktop user interface for managing virtual machines
@@ -212,6 +236,7 @@ AddPackage xclip # Command line interface to the X11 clipboard
 AddPackage xdg-user-dirs-gtk # Creates user dirs and asks to relocalize them
 AddPackage xdg-utils # Command line tools that assist applications with a variety of desktop integration tasks
 AddPackage xed # A small and lightweight text editor
+AddPackage xepub # EPUB reader for Linux desktops
 AddPackage xorg-fonts-100dpi # X.org 100dpi fonts
 AddPackage xorg-fonts-misc # X.org misc fonts
 AddPackage xorg-mkfontscale # Create an index of scalable font files for X
@@ -223,7 +248,6 @@ AddPackage xorg-xinput # Small commandline tool to configure devices
 AddPackage xreader # Document viewer for files like PDF and Postscript
 AddPackage xviewer-plugins # Plugins for Xviewer
 AddPackage yaml-language-server # YAML Language Server
-AddPackage yazi # Blazing fast terminal file manager written in Rust, based on async I/O
 AddPackage yt-dlp # A youtube-dl fork with additional features and fixes
 AddPackage zam-plugins-lv2 # Collection of audio plugins for high-quality processing - LV2 plugins
 AddPackage zed # A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
