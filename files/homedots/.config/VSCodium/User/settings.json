@@ -73,5 +73,7 @@
     "files.associations": {
         "*.service": "properties"
     },
-    "python.languageServer": "None"
+    "python.languageServer": "None",
+    "explorer.confirmPasteNative": false,
+    "claudeCode.preferredLocation": "panel"
 }
