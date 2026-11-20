@@ -37,6 +37,7 @@ function IgnorePathsExcept() {
 }
 
 etc_white_list=(
+    'audit/audit.conf'
     'default/*'
     'environment'
     'gamemode.ini'
