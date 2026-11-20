@@ -125,6 +125,7 @@ A change is done only when:
 - PR description includes: what changed, why, how it was tested, and any new or changed interfaces (CLI flags, exit codes, endpoints, schemas)
 - Green CI (lint, type check, tests) required before merge; no direct pushes to the default branch
 - Commit or push only when asked, and branch first if you're on the default branch
+- A commit message suggestion must be included after a plan execution is completed
 
 ## Configuration Scope and Permissions
 
